@@ -8,7 +8,7 @@ canonifyurls    = true
 
 [params]
   title       = "Jakub Szewczyk blog"
-  subtitle    = "A blog for front-end developers."
+  subtitle    = "A blog for all the front-end develobears in the woods."
   copyright   = "© 2018"
 
   cover       = "img/Bearground.png"
