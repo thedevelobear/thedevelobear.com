@@ -12,28 +12,25 @@ canonifyurls    = true
   copyright   = "© 2018"
 
   cover       = "img/Bearground.png"
-  description = "Here is a description of your site."
-  metaDescription = ""
+  description = "A blog for all the front-end develobears in the woods."
+  metaDescription = "A blog for all the front-end develobears in the woods."
   googleAnalytics = ""
   customCSS = ["css/index.css"]
   RSSLink = ""
 
   githubName = "jakubszewczyk"
   twitterName = "develobear1"
-  linkedinName = "eueung"
+  linkedinName = "jakub-szewczyk"
   mediumName = ""
 
   logo = "img/logo.png"
-  orgName = "EM"
-  orgWebsite = "https://www.telematika.org"
-  orgDescription = "Here is a description placeholder for your org"
 
   showSupport = true
 
   author = "develobear"
   authorAvatar = "img/ghost-icon.png"
-  authorLocation = "Bandung, ID"
-  authorWebsite = "https://eueung.github.io"
+  authorLocation = "Wrocław, PL"
+  authorWebsite = "https://www.thedevelobear.com"
   authorDescription = "Your description here"
 
   pageNotFoundTitle = "404 - Page not found"
