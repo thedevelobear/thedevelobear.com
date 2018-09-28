@@ -10,9 +10,7 @@ type = "page"
 weight = 111
 
 +++
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Yow !
+I am a 22 year old front-end developer from Wroclaw, Poland.
+    I'm a part of two start-ups – <a href='https://andoncloud.com' target='_blank'>AndonCloud</a> and <a href='https://cancercenter.ai' target='_blank'>Cancer Center</a>. The first one is a company which specialises in
+    factories downtime analysis 🏭. The second one helps histopathologists exchange knowledge while analysing
+    MRI images of tissues attacked by cancer. 🏥

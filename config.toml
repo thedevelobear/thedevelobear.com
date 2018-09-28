@@ -5,35 +5,37 @@ disqusShortname = ""
 paginate        = 6
 #SectionPagesMenu = "main"
 canonifyurls    = true
+enableRobotsTXT = true
 
 [params]
   title       = "Jakub Szewczyk blog"
   subtitle    = "A blog for all the front-end develobears in the woods."
-  copyright   = "© 2018"
+  copyright   = "©TheDevelobear 2018"
 
   cover       = "img/Bearground.png"
-  description = "A blog for all the front-end develobears in the woods."
-  metaDescription = "A blog for all the front-end develobears in the woods."
+  description = "A blog for all the front-end developers in the woods."
+  metaDescription = "A blog for all the front-end developers in the woods. It is made to be useful for people who code and design a lot."
   googleAnalytics = ""
   customCSS = ["css/index.css"]
   RSSLink = ""
 
   githubName = "jakubszewczyk"
-  twitterName = "develobear1"
+  twitterName = "thedevelobear"
   linkedinName = "jakub-szewczyk"
   mediumName = ""
 
   logo = "img/logo.png"
 
-  showSupport = true
+  showSupport = false
 
-  author = "develobear"
-  authorAvatar = "img/ghost-icon.png"
+  author = "Develobear"
+  authorAvatar = "img/Bear-avatar.png"
   authorLocation = "Wrocław, PL"
   authorWebsite = "https://www.thedevelobear.com"
-  authorDescription = "Your description here"
+  authorDescription = "Psst.. I'm not really a bear 😮"
 
   pageNotFoundTitle = "404 - Page not found"
+  pageOfflineTitle = "It looks like you're out in the woods. Check back when you have internet access!"
 
   #casper or caspertwo
   singleViewStyle = "casper"
@@ -47,18 +49,11 @@ canonifyurls    = true
   weight = 200
 
 [[menu.main]]
-  name = "Go"
-  url = "/tags/golang/"
+  name = "Code"
+  url = "/tags/code/"
   weight = 100
 
 [[menu.main]]
-  name = "Categories"
-  url = "/categories/"
+  name = "Design"
+  url = "/tags/design/"
   weight = 99
-
-[[menu.main]]
-  name = "External"
-  url = "https://google.com/"
-  weight = 95
-
-
