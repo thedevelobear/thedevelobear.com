@@ -4,7 +4,7 @@ const BASE_CACHE_FILES = [
   '/css/casper-two.css',
   '/css/index.css',
   '/post/*.md',
-  '/manifest.json',
+  '/site.webmanifest',
   '/favicon.ico',
 ];
 
