@@ -44,20 +44,6 @@
     color: yellow;
 }
 
-.site-logo{
-    max-height:200px;
-    max-width: 490px;
-}
-
-.site-header {
-    background: #fff no-repeat 50%;
-    background-size: contain;
-}
-
-.site-header::before {
-    background: linear-gradient(to right, rgba(201, 75, 75, 0.6), rgba(75, 19, 79, 0.6));
-}
-
 @media (min-width: 900px) {
     .ctsingle .post-feed {
         margin-top: -70px;
