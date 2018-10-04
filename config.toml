@@ -1,7 +1,7 @@
 baseurl         = "/"
 theme           = "casper-two"
 languageCode    = "en-US"
-disqusShortname = ""
+disqusShortname = "thedevelobear"
 paginate        = 6
 #SectionPagesMenu = "main"
 canonifyurls    = true
