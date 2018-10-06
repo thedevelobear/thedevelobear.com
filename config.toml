@@ -1,4 +1,4 @@
-baseurl         = "https://www.thedevlobear.com/"
+baseurl         = "https://www.thedevelobear.com/"
 theme           = "casper-two"
 languageCode    = "en-US"
 disqusShortname = "thedevelobear"
