@@ -16,7 +16,7 @@ title           = "Develobear"
   cover       = "img/Bearground.png"
   description = "A blog for all the front-end developers in the woods."
   metaDescription = "A blog for all the front-end developers in the woods. It is made to be useful for people who code and design a lot."
-  googleAnalytics = ""
+  googleAnalytics = "UA-127102661-1"
   customCSS = ["css/index.css"]
   RSSLink = ""
 
