@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on </title>
+    <title>Posts on Develobear</title>
     <link>/post/</link>
-    <description>Recent content in Posts on </description>
+    <description>Recent content in Posts on Develobear</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 25 Sep 2018 00:00:00 +0000</lastBuildDate>
@@ -12,13 +12,12 @@
     
     
     <item>
-      <title>Stateful, stateless, pure components - which is the fastest? ⚡️</title>
-      <link>/post/stateful-stateless-pure/</link>
+      <title>5 things you can do to speed up your React app 🏎</title>
+      <link>/post/5-things-to-improve-performance/</link>
       <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/stateful-stateless-pure/</guid>
-      <description>Intrdoduction I should probably justify my decision to write an article about the performance of different component types in React. After all, it&amp;rsquo;s not the most common topic among bears, right? 😋
-It all began when I had to prepare a safavicon.icomple project during the recruitment process in the XXX company. I&amp;rsquo;ve prepared a demo containing several components — all of which were stateful. After a few hours, I received an e-mail containing feedback.</description>
+      <guid>/post/5-things-to-improve-performance/</guid>
+      <description>Short Intro It is a well-known fact that people aren’t capable of using all the potential hidden inside their personal computers, laptops or even smartphones. Just stop for a second and look around: we have technology that is capable of things that we cannot possibly imagine, yet we struggle to create a website that doesn’t lag on the newest MacBook Pro or create an android app that won’t crash every now and then on an 8 gig snapdragon 845 smartphone.</description>
     </item>
     
   </channel>
