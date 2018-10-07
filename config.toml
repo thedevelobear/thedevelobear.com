@@ -18,7 +18,7 @@ title           = "The Develobear - Front-end, React, CSS, Design blog."
   metaDescription = "A blog for all the front-end developers in the woods. It is made to be useful for people who code and design a lot."
   googleAnalytics = "UA-127102661-1"
   customCSS = ["css/index.css"]
-  RSSLink = ""
+  RSSLink = "https://www.thedevelobear.com/post/index.xml"
 
   githubName = "jakubszewczyk"
   twitterName = "thedevelobear"
