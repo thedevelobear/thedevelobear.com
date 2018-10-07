@@ -6,10 +6,10 @@ paginate        = 6
 #SectionPagesMenu = "main"
 canonifyurls    = true
 enableRobotsTXT = true
-title           = "Develobear"
+title           = "The Develobear "
 
 [params]
-  title       = "Develobear"
+  title       = "The Develobear - A blog for all the front-end develobears in the woods."
   subtitle    = "A blog for all the front-end develobears in the woods."
   copyright   = "©TheDevelobear 2018"
 
