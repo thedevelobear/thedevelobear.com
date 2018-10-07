@@ -108,7 +108,7 @@ The above quote from official [babeljs](https://babeljs.io/docs/en/babel-plugin-
 ### @babel/plugin-transform-react-inline-elements
 
 React Inline Elements plugin converts JSX elements into object literals they are supposed to return. Note that this plugin should only be used in the production environment, because it skips important checks that happen in development mode, including propTypes and makes warning messages less developer friendly.
-You can configure your plugns via .babelrc file
+You can configure your plugins via .babelrc file
 ```js
 {
   “plugins”: [
@@ -214,7 +214,7 @@ fill(array, '🐻');
 ## TL;DR
 
 ---
-Use PureComponents or componentShouldUpdate() lifecycle method to check whether the component should re-render or not. You can check unnecessary re-renders using [why-did-you-update](https://github.com/maicki/why-did-you-update) library.
+Use PureComponents or shouldComponentUpdate() lifecycle method to check whether the component should re-render or not. You can check unnecessary re-renders using [why-did-you-update](https://github.com/maicki/why-did-you-update) library.
 
 ---
 Use @babel/plugin-transform-react-constant-elements and @babel/plugin-transform-react-inline-elements.
