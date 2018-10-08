@@ -6,6 +6,7 @@ paginate        = 6
 #SectionPagesMenu = "main"
 canonifyurls    = true
 enableRobotsTXT = true
+showSubscribe   = true
 title           = "The Develobear - Front-end, React, CSS, Design blog."
 
 [params]
