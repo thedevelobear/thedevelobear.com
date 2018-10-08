@@ -11,7 +11,7 @@ comments: true
 ---
 
 ## Short Intro
-It is a well-known fact that people aren’t capable of using all the potential hidden inside their personal computers, laptops or even smartphones. Just stop for a second and look around: we have technology that is capable of things that we cannot possibly imagine, yet we struggle to create a website that doesn’t lag on the newest MacBook Pro or create an android app that won’t crash every now and then on an 8 gig snapdragon 845 smartphone. We have hundreds, or even thousands of times more computing power than people had when they reached the moon.
+It is a well-known fact that people aren’t able to use all the potential hidden inside their personal computers, laptops or even smartphones. Just stop for a second and look around: we have technology that is capable of doing things that we cannot possibly imagine, yet we struggle to create a website that doesn’t lag on the newest MacBook Pro or create an android app that won’t crash every now and then on an 8 gig snapdragon 845 smartphone. We have hundreds, or even thousands of times more computing power than people had when they reached the moon.
 
 Fortunately, this won’t be another post that just nags about technology being ahead of us or our inability to fully use it’s potential, but there is one thing I just have to complain about: we are lazy enough to just be OK with it. We don’t even try to pursue it. **Most developers don’t think about the performance of their apps because they know that our devices are getting stronger and stronger every year.**
 
@@ -20,7 +20,7 @@ Fortunately, this won’t be another post that just nags about technology being 
 That’s why I’m going to give you a few tips on how you can speed up your React apps and be proud that you at least tried.
 
 ## 1. Pure components
-Pure components are probably the easiest ones to include in your app (you just need to add a few letters and voila). Change this:
+Pure components are probably the easiest ones to include in your app (you just need to add a few letters and voilà). Change this:
 ```javascript
  class BearComponent extends Component {
     //...
@@ -40,7 +40,7 @@ The shouldComponentUpdate() method is a built-in lifecycle method in React Compo
 
 ### Prevent unnecessary re-renders
 
-The easiest method to use this lifecycle hook is to simply return false when you are sure that the component doesn’t need to change throughout the lifespan of your app.
+The easiest way to use this lifecycle hook is to simply return false when you are sure that the component doesn’t need to change throughout the lifespan of your app.
 
 ``` jsx
  class BearComponent extends PureComponent {
@@ -186,7 +186,7 @@ Reducing bundle size reduces the time needed to fetch our JavaScript code from s
 >
 > ~ Daft Punk
 
-Developers should minify and obfuscate their code before deploying it to production. This rule itself is perfectly fine and obvious to most developers; however what if the minified bundle is still big enough to cause delays while fetching it from the server? Simple minification is fine for smaller React apps, but if you see that fetching it takes too much time, you should take a look at code splitting, which is Webpack’s built-in feature. It breaks the JavaScript code into smaller chunks which are faster to deliver to client.
+Developers should minify and obfuscate their code before deploying it to production. This rule itself is perfectly fine and obvious to most developers; however what if the minified bundle is still big enough to cause delays while fetching it from the server? Simple minification is fine for smaller React apps, but if you see that fetching it takes too much time, you should take a look at code splitting, which is Webpack’s built-in feature. It breaks the JavaScript code into smaller chunks which are faster to deliver to the client.
 
 The code splitting topic is quite extensive and I could probably write a separate post about it, so as long as I don’t have one, you can use the guide from the official [Webpack docs](https://webpack.js.org/guides/code-splitting/).
 
@@ -233,8 +233,8 @@ Let me just quote myself here…
 
 > “Most developers don’t think about the performance of their apps because they know that our devices are getting stronger and stronger every year.”
 
-If you read this post, or maybe you just looked through it briefly but decided to use some of the included tips, then you are not like “most developers”.  You’re probably not OK with the performance of your apps and you want to change something — that’s great, salute to you!
+If you read this post, or maybe you just glanced at it but decided to use some of the included tips, then you are not like “most developers”. You’re probably not OK with the performance of your apps and you want to change something — that’s great, I salute you!
 
-Of course there are many other ways to improve performance of your React apps, but hey, we all have to start somewhere, right? I might write part 2 when I find something worth mentioning here, but until then… have fun speeding up your apps!
+Of course there are many other ways to improve performance of your React apps, but hey, we all have to start somewhere, right? I might write part 2 when I find something worth mentioning on this.blog (😎) but until then… have fun speeding up your apps!
 
 Hey, one more thing. I've created the graphics with the help of <a rel="nofollow" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
