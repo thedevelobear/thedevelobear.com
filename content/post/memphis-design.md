@@ -26,26 +26,7 @@ The story behind this name seems quite mysterious, considering the fact that the
 
 It looks bizarre, unconventional, maybe even irrational but at the same time, it is quite appealing. You could probably go insane while spending too much time in these rooms though 🤯
 
-## User Interfaces
-That’s right. Memphis Design is often found in user interfaces. **In fact, it is probably the best way to go with your next project.**
-You could not know the name, you don’t even have to, but I’m sure you’ve seen it before — most likely in modern mobile, web or magazine designs.
-
-If there is something I can be sure about, it is that if you want to find the best up-to-date designs you should probably visit [awwwards.com](https://www.awwwards.com/) or [Pinterest](https://pl.pinterest.com/). I can’t stress enough how much inspiration you can get from there. I didn’t even have to search for a Memphis Design website, I just visited the main page and hey, there it is! It was created by [Codeq](https://codeq.pl/) company from Poland.
-
-(BTW, I’m not sponsored by anyone but if this post gets hundreds of thousands of reads I wouldn’t mind being. 😅)
-
-<img src="/img/Memphis-design/codeq_01.jpg" />
-<img src="/img/Memphis-design/codeq_02.jpg" />
-
-Other examples are from Dug company and welovewebdesign instagram account.
-
-<img src="/img/Memphis-design/dug.png" />
-
-{{< instagram Bkdnv81h-kB hidecaption >}}
-
-Those designs have a lot in common with the Memphis movement work. I am aware that it is not exactly what Memphis movement was all about, though. Nowadays those designs are not a reaction against trends. **Nowadays they are an example of how a movement, that half a century ago would’ve seemed absurd, is now back in vogue.** Those designs are full of vivid colors and different shapes, but they try to stay minimalistic and clean at the same time. I have to say I’m a big fan of this combination.
-
-There are lots of designs I could show you, from mobile apps, through landing pages, to whole web apps. Instead, I will try to show you the main points you should focus on when creating your own designs.
+There are lots of designs I could show you, from furniture, interiors, mobile apps, through landing pages, to whole web apps. Instead, I will try to show you the main points you should focus on when creating your own designs.
 
 ## How to create a Memphis looking user interface?
 
@@ -82,6 +63,26 @@ All right, this one wasn’t a part of Memphis Design. As far as I know, they di
 
 {{< instagram Bo1sImiFx3P hidecaption >}}
 {{< instagram BZA8fwnDOkh hidecaption >}}
+
+## User Interfaces
+Memphis Design is often found in user interfaces. **In fact, it is probably the best way to go with your next project.**
+You could not know the name, you don’t even have to, but I’m sure you’ve seen it before — most likely in modern mobile, web or magazine designs.
+
+If there is something I can be sure about, it is that if you want to find the best up-to-date designs you should probably visit [awwwards.com](https://www.awwwards.com/) or [Pinterest](https://pl.pinterest.com/). I can’t stress enough how much inspiration you can get from there. I didn’t even have to search for a Memphis Design website, I just visited the main page and hey, there it is! It was created by [Codeq](https://codeq.pl/) company from Poland.
+
+(BTW, I’m not sponsored by anyone but if this post gets hundreds of thousands of reads I wouldn’t mind being. 😅)
+
+<img src="/img/Memphis-design/codeq_01.jpg" />
+<img src="/img/Memphis-design/codeq_02.jpg" />
+
+Other examples are from Dug company and welovewebdesign instagram account.
+
+<img src="/img/Memphis-design/dug.png" />
+
+{{< instagram Bkdnv81h-kB hidecaption >}}
+
+Those designs have a lot in common with the Memphis movement work. I am aware that it is not exactly what Memphis movement was all about, though. Nowadays those designs are not a reaction against trends. **Nowadays they are an example of how a movement, that half a century ago would’ve seemed absurd, is now back in vogue.** Those designs are full of vivid colors and different shapes, but they try to stay minimalistic and clean at the same time. I have to say I’m a big fan of this combination.
+
 
 ## TL;DR
 If you want your next project to look “Memphisy” and draw people’s attention you should:
