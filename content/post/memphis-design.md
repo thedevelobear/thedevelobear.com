@@ -97,7 +97,7 @@ I mean Shquille O’neal-bold fonts. Make them big. Use 900 font-weight for titl
 * **Gradients are back in style, baby!**
 I know that people were afraid of gradients before. Fortunately they are back in style. Maybe they are not what Memphis Design was all about, but they fit nicely in there.
 
-## Sum-up
+## Summary
 Trends, especially the design ones, are cyclical. They tend to repeat themselves every few decades. We can notice it in interior designs, fashion, or in music. It seems that even the most bizarre and outrageous trends are able to find their way of coming back in vogue. The Memphis Design Movement is no different. After a journey that started as a relatively brief experimental movement within furniture design, the Memphis Design trend has got into patterns, mobile, and web design.
 
 Hey, one more thing. I've created the graphics with the help of <a rel="nofollow" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
