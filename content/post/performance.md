@@ -131,7 +131,7 @@ class SearchBar extends React.Component {
   }
 
   ajaxCall(event) {
-    //..some suggestions fetching logic
+    //..some fetching logic
   }
 
   handleChange(event) {
