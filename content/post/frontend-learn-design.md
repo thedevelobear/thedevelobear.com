@@ -30,6 +30,7 @@ This point is similar to the previous one — after all you need to be self-cont
 For example, you can create a great chat app with end-to-end encryption, self-destroying messages and other killer features but without the appealing user interface it will be really hard to sell it to anyone. The majority of people will choose other apps that allow them to change message bubble colors, backgrounds and take selfies with beautiful filters from inside the app. 
 
 Look at the new Facebook Messenger app, they’ve made the design cleaner, added gradients to chat bubbles and voilá – people write articles about a great, "new" messenger app.
+
 <img src="/img/Should-you-learn-design/messenger_gradient.png" />
 
 ### 3. If you know good designs, you probably know good UX
