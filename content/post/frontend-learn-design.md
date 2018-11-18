@@ -3,6 +3,7 @@ author: "Develobear"
 date: 2018-10-28
 slug: should-you-learn-design
 title: Should you learn design as a front-end developer?
+description: This question can be used to provoke a looong discussion among front-end developers. Just like bringing up a topic of semi-colons in JavaScript, css-in-js or the best linter config (just try to bring up one of these, grab some popcorn and watch 👀🍿).
 weight: 10
 tags: [design, code]
 authorAvatar: /img/Bear-avatar.png

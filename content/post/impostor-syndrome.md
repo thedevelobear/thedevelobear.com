@@ -3,6 +3,7 @@ author: "Develobear"
 date: 2018-11-04
 slug: the-impostor-syndrome
 title: The impostor syndrome — do you suffer from it?
+description: Have you ever thought that you shouldn’t do something because others are better than you? Perhaps once in a while you are attacked by the feeling that you are cheating others?
 weight: 10
 tags: [code, design]
 authorAvatar: /img/Bear-avatar.png

@@ -3,6 +3,7 @@ author: "Develobear"
 date: 2018-09-25
 slug: 5-things-to-improve-performance
 title: 5 things you can do to speed up your React app 🏎
+description: Fortunately, this won’t be another post that just nags about technology being ahead of us or our inability to fully use it’s potential, but there is one thing I just have to complain about – we are lazy enough to just be OK with it. We don’t even try to pursue it.
 weight: 10
 tags: [code]
 authorAvatar: /img/Bear-avatar.png
