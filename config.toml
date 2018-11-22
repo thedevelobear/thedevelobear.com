@@ -21,10 +21,10 @@ title           = "The Develobear - Front-end, React, CSS, Design blog."
   customCSS = ["css/index.css"]
   RSSLink = "https://www.thedevelobear.com/post/index.xml"
 
-  githubName = "jakubszewczyk"
+  githubName = "thedevelobear"
   twitterName = "thedevelobear"
   linkedinName = "jakub-szewczyk"
-  mediumName = ""
+  mediumName = "thedevelobear"
 
   logo = "img/logo.png"
 
