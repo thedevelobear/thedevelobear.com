@@ -2,7 +2,7 @@
 author: "Develobear"
 date: 2018-11-18
 slug: microinteractions
-title: Microinteractions, halo effect, react-rewards. The best ways to make users come back to your app!
+title: Microinteractions, halo effect, react-rewards. Reward your users for little things and make them smile!
 description: Microinteractions are… let’s say they are events in our apps, that — when used wisely — create a moment of engagement and reward our users for the actions they did.
 weight: 10
 tags: [design]
