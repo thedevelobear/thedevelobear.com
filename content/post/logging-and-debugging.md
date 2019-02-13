@@ -9,7 +9,6 @@ tags: [code]
 authorAvatar: /img/Bear-avatar.png
 image: img/Logging-and-debugging/BearLogging.png
 comments: true
-draft: true
 ---
 
 # A few methods I use on a daily basis.
