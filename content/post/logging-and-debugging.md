@@ -2,7 +2,7 @@
 author: "Develobear"
 date: 2019-02-11
 slug: logging-and-debugging
-title: Logging and debugging in React. A few methods I use on a daily basis.
+title: Logging and debugging in JavaScript. A few methods I use on a daily basis.
 description: I wrote this article to share a few debugging and logging methods I tend to use on a daily basis. I hope that at least some of them aren’t as popular as _console.log_, at least among the ones that just begin their journey with JavaScript.
 weight: 10
 tags: [code]
