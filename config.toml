@@ -14,7 +14,7 @@ title           = "The Develobear - Front-end, React, CSS, Design blog."
   subtitle    = "A blog for all the front-end develobears in the woods."
   copyright   = "©TheDevelobear 2018"
 
-  cover       = "img/Bearground.png"
+  # cover       = "img/Bearground.png"
   description = "A blog for all the front-end developers in the woods."
   metaDescription = "A blog for all the front-end developers in the woods. It is made to be useful for people who code and design a lot."
   googleAnalytics = "UA-127102661-1"

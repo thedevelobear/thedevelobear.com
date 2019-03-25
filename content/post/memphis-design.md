@@ -1,5 +1,5 @@
 ---
-author: "Develobear"
+author: "develobear"
 date: 2018-10-09
 slug: modern-ui-with-memphis-design
 title: How to create a modern looking user interface? Get inspired by Memphis!

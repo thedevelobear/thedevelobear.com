@@ -1,5 +1,5 @@
 ---
-author: "Develobear"
+author: "develobear"
 date: 2018-11-04
 slug: the-impostor-syndrome
 title: The impostor syndrome — do you suffer from it?
@@ -27,7 +27,7 @@ It turns out, that software development is one of the professions most prone to 
 ### 1. Social media 🙍‍♀️📱🙍‍♂️
 
 > **The ubiquitous dictatorship of happiness in social media only deepens our feeling of being worse than the others.**
-~ The Develobear
+~ develobear
 
 I’ll try to explain it using the example of “my friend” who just started to write his blog about front-end development and all the stuff connected to it (yes, you’ve guessed it right, I’m writing about myself).
 

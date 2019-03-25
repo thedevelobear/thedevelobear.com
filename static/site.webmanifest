@@ -1,6 +1,6 @@
 {
-    "name": "The Develobear",
-    "short_name": "The Develobear",
+    "name": "develobear",
+    "short_name": "develobear",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
