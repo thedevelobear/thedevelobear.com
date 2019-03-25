@@ -1,5 +1,5 @@
 ---
-author: "Develobear"
+author: "develobear"
 date: 2018-09-25
 slug: 5-things-to-improve-performance
 title: 5 things you can do to speed up your React app 🏎

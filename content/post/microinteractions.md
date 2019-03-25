@@ -1,5 +1,5 @@
 ---
-author: "Develobear"
+author: "develobear"
 date: 2018-11-18
 slug: microinteractions
 title: Microinteractions, halo effect, react-rewards. Reward your users for little things and make them smile!
@@ -77,7 +77,7 @@ Imagine a situation where you're sitting at the bar and see a great girl. She’
 …and she lets you sit with her. Without any emotional feedback. Without a smile. Without showing you that you did great. Without the **reward**. You get what you wanted, she’s yours. But something is missing here — without the feedback you can only guess that everything went right. And let’s be honest... 
 
 > It’s better to get the 9/10 that adores you, then 11/10 that just lets you sit with her.
-> ~ The Develobear
+> ~ develobear
 
 The same applies to software. You can create an app that does what the users wants. Every single feature fits their needs, but eventually they will switch your app for another one that just feels more “human”. Although, if you design the microinteractions well, you can show your users a clear sign that you care about them. That’s why they value so much. If you provide an immediate visual feedback and teach a user to work with your system, they will come back to it. They won’t search for another app if they know how to use yours and if they are rewarded for what they do inside.
 

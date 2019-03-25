@@ -1,5 +1,5 @@
 ---
-author: "Develobear"
+author: "develobear"
 date: 2019-03-23
 slug: logpoints
 title: 'Chrome DevTools: using Logpoints for on-demand JavaScript debugging.'
@@ -9,7 +9,6 @@ tags: [code]
 authorAvatar: /img/Bear-avatar.png
 image: img/Logpoints/Logpoints.png
 comments: true
-draft: true
 ---
 ## Intro
 This short post is an addition to my previous post about logging in JavaScript– [Logging and debugging in JavaScript. A few methods I use on a daily basis.](https://www.thedevelobear.com/post/logging-and-debugging/)

@@ -1,5 +1,5 @@
 ---
-author: "Develobear"
+author: "develobear"
 date: 2018-10-28
 slug: should-you-learn-design
 title: Should you learn design as a front-end developer?

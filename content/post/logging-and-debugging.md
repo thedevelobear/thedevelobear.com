@@ -1,5 +1,5 @@
 ---
-author: "Develobear"
+author: "develobear"
 date: 2019-02-11
 slug: logging-and-debugging
 title: Logging and debugging in JavaScript. A few methods I use on a daily basis.
