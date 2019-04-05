@@ -7,12 +7,12 @@ paginate        = 6
 canonifyurls    = true
 enableRobotsTXT = true
 showSubscribe   = true
-title           = "The Develobear - Front-end, React, CSS, Design blog."
+title           = "Develobear - Front-end, React, CSS, Design blog."
 
 [params]
-  title       = "The Develobear - Front-end, React, CSS, Design blog."
+  title       = "Develobear - Front-end, React, CSS, Design blog."
   subtitle    = "A blog for all the front-end develobears in the woods."
-  copyright   = "©TheDevelobear 2018"
+  copyright   = "©Develobear 2019"
 
   # cover       = "img/Bearground.png"
   description = "A blog for all the front-end developers in the woods."
