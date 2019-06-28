@@ -2,8 +2,8 @@
 author: "develobear"
 date: 2019-06-28
 slug: styling-cognito-verification-email
-title: How to customise verification emails in Amazon Cognito? Use Lambda!
-description: Cognito provides a way to verify the users, the developer should be responsible for customising how it looks like. The problem is that Cognito doesn’t provide a way to customise those messages easily.
+title: How to customize verification emails in Amazon Cognito? Use Lambda!
+description: Cognito provides a way to verify the users, the developer should be responsible for customising how it looks like. The problem is that Cognito doesn’t provide a way to customize those messages easily.
 weight: 10
 tags: [code]
 authorAvatar: /img/Bear-avatar.png
@@ -17,11 +17,11 @@ Let’s say you want your users to be able to reset their passwords through Sign
 
 <img src="/img/Styling-cognito-verification-email/default_email.png" />
 
-It’s understandable though – Cognito provides a way to verify the users, the developer should be responsible for customising how it looks like. **The problem** is that Cognito doesn’t provide a way to customise those messages easily. Under General settings -> Message customisations you can customise the MFA (Multi-Factor Authentication) message and your user invitation messages – but you can’t customise the verification email 🤷🏼‍♂️
+It’s understandable though – Cognito provides a way to verify the users, the developer should be responsible for customising how it looks like. **The problem** is that Cognito doesn’t provide a way to customize those messages easily. Under General settings -> Message customisations you can customize the MFA (Multi-Factor Authentication) message and your user invitation messages – but you can’t customize the verification email 🤷🏼‍♂️
 
 ## The solution – lambdas!
 
-Although, as of the time of creating this post, there is no way to customise verification emails through Cognito console easily, you can do it using lambdas. You can create a lambda function that intercepts Cognito Sync Trigger in order to override the message.
+Although, as of the time of creating this post, there is no way to customize verification emails through Cognito console easily, you can do it using lambdas. You can create a lambda function that intercepts Cognito Sync Trigger in order to override the message.
 
 In order to do that, you need to:
 
@@ -37,7 +37,7 @@ In order to do that, you need to:
 
 **4.** Basic information card:
 
-Enter desired function name. In my case it will be _customiseVerificationEmail_.
+Enter desired function name. In my case it will be _customizeVerificationEmail_.
 
 In _Execution role_ tab you can use an existing role with proper permissions or let AWS create a new role with basic Lambda permissions. Let’s choose _Create a new role with basic Lambda permissions_
 
