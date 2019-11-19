@@ -33,11 +33,13 @@
 
     {{ "<!-- Stylesheets -->" | safeHTML }}
     <link rel="stylesheet" type="text/css" href="{{ "built/screen.css" | absURL}}" /> 
+    <link rel="preload" href="{{ "built/screen.css" | absURL}}" as="style"/>
     <link rel="stylesheet" type="text/css" href="{{ "css/casper-two.css" | absURL}}" />
+    <link rel="preload" href="{{ "css/casper-two.css" | absURL}}" as="style"/>
 
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Roboto:400,700" rel="stylesheet">
 
-    {{ range .Site.Params.customCSS }} <link rel="stylesheet" href="{{ . | absURL }}" /> {{ end }}
+    {{ range .Site.Params.customCSS }} <link rel="stylesheet" href="{{ . | absURL }}" /><link rel="preload" href="{{ . | absURL }}" as="style"/> {{ end }}
 
     {{ if .Site.Params.RSSLink}}<link href="{{.Site.Params.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" /> {{else}}{{ if eq .URL "/" }}<link href="{{ "index.xml" | absURL}}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" /> {{ end }} {{ end }}
 
