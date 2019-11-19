@@ -1,16 +1,87 @@
 <footer class="site-footer outer">
-  <div class="site-footer-content inner">
-    <section class="copyright" style="line-height: 1.3em;">
-      <a href="/">{{.Site.Params.orgName}}</a> {{.Site.Params.copyright}} <br>
-      {{with .Site.Params.showSupport}}<span style="font-size: 0.8em; color: #555;">Hugo port of <a href="https://github.com/TryGhost/Casper">Casper 2.1.7</a> by <a href="https://www.telematika.org">EM</a></span>{{end}}
-    </section>
-    <nav class="site-footer-nav">
-        <a href="/">Latest Posts</a>
-        {{with .Site.Params.fbName}}<a href="https://www.facebook.com/{{.}}" target="_blank" rel="noopener">Facebook</a>{{end}}
-        {{with .Site.Params.twitterName}}<a href="https://twitter.com/{{.}}" target="_blank" rel="noopener">Twitter</a>{{end}}
-        {{with .Site.Params.githubName}}<a href="https://github.com/{{.}}" target="_blank" rel="noopener">Github</a>{{end}}
-        {{with .Site.Params.linkedinName}}<a href="https://www.linkedin.com/in/{{.}}" target="_blank" rel="noopener">LinkedIn</a>{{end}}
-        {{with .Site.Params.mediumName}}<a href="https://medium.com/@{{.}}" target="_blank" rel="noopener">Medium</a>{{end}}
-    </nav>  
-  </div>
+    <div class="site-footer-content inner">
+        <script>
+            if('serviceWorker' in navigator) {
+
+                /**
+                 * Define if <link rel='next|prev|prefetch'> should
+                 * be preloaded when accessing this page
+                 */
+                const PREFETCH = true;
+
+                /**
+                 * Define which link-rel's should be preloaded if enabled.
+                 */
+                const PREFETCH_LINK_RELS = ['index','next', 'prev', 'prefetch'];
+
+                /**
+                 * prefetchCache
+                 */
+                function prefetchCache() {
+                    if(navigator.serviceWorker.controller) {
+
+                        let links = document.querySelectorAll(
+                            PREFETCH_LINK_RELS.map((rel) => {
+                                return 'link[rel='+rel+']';
+                            }).join(',')
+                        );
+
+                        if(links.length > 0) {
+                            Array.from(links)
+                                .map((link) => {
+                                    let href = link.getAttribute('href');
+                                    navigator.serviceWorker.controller.postMessage({
+                                        action : 'cache',
+                                        url : href,
+                                    });
+                                });
+                        }
+
+
+                    }
+                }
+
+                /**
+                 * Register Service Worker
+                 */
+                navigator.serviceWorker
+                    .register('/sw.js', { scope: '/' })
+                    .then(() => {
+                        console.log('Service Worker Registered');
+                    }).catch(e => {
+                        console.error('Service worker error', e);
+                });
+
+                /**
+                 * Wait if ServiceWorker is ready
+                 */
+                navigator.serviceWorker
+                    .ready
+                    .then(() => {
+                        if(PREFETCH) {
+                            prefetchCache();
+                        }
+                    });
+
+            }
+        </script>
+        <section class="copyright" style="line-height: 1.3em;">
+            <a href="/">{{.Site.Params.orgName}}</a> {{.Site.Params.copyright}} <br>
+            {{with .Site.Params.showSupport}}<span style="font-size: 0.8em; color: #555;">Hugo port of <a
+                href="https://github.com/TryGhost/Casper">Casper 2.1.7</a> by <a
+                href="https://www.telematika.org">EM</a></span>{{end}}
+        </section>
+        <nav class="site-footer-nav">
+            <a href="/">Latest Posts</a>
+            {{with .Site.Params.fbName}}<a href="https://www.facebook.com/{{.}}" target="_blank"
+                                           rel="noopener">Facebook</a>{{end}}
+            {{with .Site.Params.twitterName}}<a href="https://twitter.com/{{.}}" target="_blank"
+                                                rel="noopener">Twitter</a>{{end}}
+            {{with .Site.Params.githubName}}<a href="https://github.com/{{.}}" target="_blank" rel="noopener">Github</a>{{end}}
+            {{with .Site.Params.linkedinName}}<a href="https://www.linkedin.com/in/{{.}}" target="_blank"
+                                                 rel="noopener">LinkedIn</a>{{end}}
+            {{with .Site.Params.mediumName}}<a href="https://medium.com/@{{.}}" target="_blank"
+                                               rel="noopener">Medium</a>{{end}}
+        </nav>
+    </div>
 </footer>
