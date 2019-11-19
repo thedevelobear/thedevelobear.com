@@ -108,4 +108,4 @@ If you want your next project to look “Memphisy” and draw people’s attenti
 
 Trends, especially the design ones, are cyclical. They tend to repeat themselves every few decades. We can notice it in interior designs, fashion, or in music. It seems that even the most bizarre and outrageous trends are able to find their way of coming back in vogue. The Memphis Design Movement is no different. After a journey that started as a relatively brief experimental movement within furniture design, the Memphis Design trend has got into patterns, mobile, and web design.
 
-Hey, one more thing. I've created the graphics with the help of <a rel="nofollow" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
+Hey, one more thing. I've created the graphics with the help of <a rel="noreferrer" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>

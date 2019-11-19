@@ -238,4 +238,4 @@ If you read this post, or maybe you just glanced at it but decided to use some o
 
 Of course there are many other ways to improve performance of your React apps, but hey, we all have to start somewhere, right? I might write part 2 when I find something worth mentioning on this.blog (😎) but until then… have fun speeding up your apps!
 
-Hey, one more thing. I've created the graphics with the help of <a rel="nofollow" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
+Hey, one more thing. I've created the graphics with the help of <a rel="noreferrer" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>

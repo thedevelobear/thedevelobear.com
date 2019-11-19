@@ -96,4 +96,4 @@ If you’re short on the budget you can use a small React lib I’ve created, ca
 
 <img src="/img/Microinteractions/react-rewards.gif" />
 
-Hey, one more thing. I've created the graphics with the help of <a rel="nofollow" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
+Hey, one more thing. I've created the graphics with the help of <a rel="noreferrer" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>

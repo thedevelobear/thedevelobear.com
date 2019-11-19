@@ -73,7 +73,7 @@ E-mail templates tend to be huge, so I've replaced mine with a placeholder.
 
 See that ➡️PLACE YOUR HTML HERE⬅️ placeholder in _forgotPasswordMessage_ variable? That's the place where you want to place you html code.
 
-Of course you can view my html template **[here](https://gist.github.com/thedevelobear/599ef0a693aa870a26e4714086136203)**.
+Of course you can **[view my html template here](https://gist.github.com/thedevelobear/599ef0a693aa870a26e4714086136203)**.
 
 **❗️ALERT – you need to place a verification code in html️️❗️**
 
@@ -91,4 +91,4 @@ The result should look something like that:
 
 That’s it. It’s not hard to do that, but it took me a long time to get it working in the first place, so I thought I could share it with you.
 
-Hey, one more thing. I've created the graphics with the help of <a rel="nofollow" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
+Hey, one more thing. I've created the graphics with the help of <a rel="noreferrer" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>

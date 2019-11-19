@@ -61,4 +61,4 @@ Now that you know what the impostor syndrome is all about, I want you to know th
 ### Why is it good for us?
 The impostor syndrome indicates that we are getting out of our comfort zones. And that means that we are developing ourselves, we are growing. Remember, **as soon as you start to feel like the smartest and the most talented person in the room, it means that you are in the wrong room.** So always aim to feel and chase the impostor syndrome. It will make you do things that you wouldn’t have done before. It will also help you become a person you previously only admired.
 
-Hey, one more thing. I've created the graphics with the help of <a rel="nofollow" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
+Hey, one more thing. I've created the graphics with the help of <a rel="noreferrer" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>

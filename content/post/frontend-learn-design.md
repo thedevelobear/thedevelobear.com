@@ -70,4 +70,4 @@ Because of how web development evolved throughout the years and its growing comp
 
 It is a blog post with my humble opinion about why people, especially front-end developers, should learn design. It is meant to be a starting point for people to think about whether they should learn design or not. I’ll be glad if you share your opinions with me 🙃
 
-Hey, one more thing. I've created the graphics with the help of <a rel="nofollow" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
+Hey, one more thing. I've created the graphics with the help of <a rel="noreferrer" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
