@@ -1,4 +1,4 @@
-const CACHE_VERSION = 4;
+const CACHE_VERSION = 5;
 
 const BASE_CACHE_FILES = [
     '/android-chrome-192x192.png',
@@ -15,16 +15,21 @@ const BASE_CACHE_FILES = [
     '/index.html',
     '/built/screen.css',
     '/css/index.css',
+    '/css/casper-two.css',
 ];
 
 const OFFLINE_CACHE_FILES = [
+    '/built/screen.css',
     '/css/index.css',
+    '/css/casper-two.css',
     '/sw.js',
     '/offline/index.html',
 ];
 
 const NOT_FOUND_CACHE_FILES = [
+    '/built/screen.css',
     '/css/index.css',
+    '/css/casper-two.css',
     '/sw.js',
     '/404.html',
 ];
