@@ -7,7 +7,7 @@ description: I wrote this article to share a few debugging and logging methods I
 weight: 10
 tags: [code]
 authorAvatar: /img/Bear-avatar.png
-image: img/Logging-and-debugging/BearLogging.png
+image: img/Logging-and-debugging/BearLogging.jpg
 comments: true
 ---
 

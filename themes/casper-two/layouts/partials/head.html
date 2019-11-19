@@ -11,11 +11,17 @@
 
     <link rel="shortcut icon" href="{{ "favicon.ico" | absURL}}" />
     <link rel="canonical" href="{{ .Permalink }}" />
-    <link rel="manifest" href="{{ "/site.webmanifest" | absURL}}" />
+    <link rel="manifest" href="{{ "/manifest.json" | absURL}}" />
+
+    <link rel="icon" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <!-- Add to home screen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
     <meta name="apple-mobile-web-app-title" content="develobear">
+
+    <meta name="theme-color" content="#fff"/>
 
     {{ if .IsPage }} <meta name="description" content="{{ .Description | default (substr .Summary 0 160) }}" /> {{ else }}
     <meta name="description" content="{{ .Site.Params.metadescription | default .Site.Params.description }}" /> {{ end }}
@@ -28,7 +34,6 @@
     {{ "<!-- Stylesheets -->" | safeHTML }}
     <link rel="stylesheet" type="text/css" href="{{ "built/screen.css" | absURL}}" /> 
     <link rel="stylesheet" type="text/css" href="{{ "css/casper-two.css" | absURL}}" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/shades-of-purple.min.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Roboto:400,700" rel="stylesheet">
 
