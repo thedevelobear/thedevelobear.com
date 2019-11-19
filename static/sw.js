@@ -1,4 +1,4 @@
-const CACHE_VERSION = 6;
+const CACHE_VERSION = 7;
 
 const BASE_CACHE_FILES = [
     '/android-chrome-192x192.png',
@@ -11,6 +11,7 @@ const BASE_CACHE_FILES = [
     '/manifest.json',
     '/mstile-150x150.png',
     '/safari-pinned-tab.svg',
+    '/img/logo.png',
     '/sw.js',
     '/index.html',
     '/built/screen.css',
@@ -19,40 +20,10 @@ const BASE_CACHE_FILES = [
 ];
 
 const OFFLINE_CACHE_FILES = [
-    '/android-chrome-192x192.png',
-    '/apple-touch-icon.png',
-    '/browserconfig.xml',
-    '/favicon.ico',
-    '/favicon-16x16.png',
-    '/favicon-32x32.png',
-    '/google664db404af3a6ec6.html',
-    '/manifest.json',
-    '/mstile-150x150.png',
-    '/safari-pinned-tab.svg',
-    '/sw.js',
-    '/index.html',
-    '/built/screen.css',
-    '/css/index.css',
-    '/css/casper-two.css',
     '/offline/index.html',
 ];
 
 const NOT_FOUND_CACHE_FILES = [
-    '/android-chrome-192x192.png',
-    '/apple-touch-icon.png',
-    '/browserconfig.xml',
-    '/favicon.ico',
-    '/favicon-16x16.png',
-    '/favicon-32x32.png',
-    '/google664db404af3a6ec6.html',
-    '/manifest.json',
-    '/mstile-150x150.png',
-    '/safari-pinned-tab.svg',
-    '/sw.js',
-    '/index.html',
-    '/built/screen.css',
-    '/css/index.css',
-    '/css/casper-two.css',
     '/404.html',
 ];
 
@@ -77,9 +48,9 @@ const MAX_TTL = {
 };
 
 const CACHE_BLACKLIST = [
-    (str) => {
-        return !str.startsWith('https://thedevelobear.com');
-    },
+    // (str) => {
+    //     return !str.startsWith('https://thedevelobear.com');
+    // },
 ];
 
 const SUPPORTED_METHODS = [
