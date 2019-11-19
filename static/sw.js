@@ -1,4 +1,4 @@
-const CACHE_VERSION = 3;
+const CACHE_VERSION = 4;
 
 const BASE_CACHE_FILES = [
     '/android-chrome-192x192.png',
@@ -13,6 +13,7 @@ const BASE_CACHE_FILES = [
     '/safari-pinned-tab.svg',
     '/sw.js',
     '/index.html',
+    '/built/screen.css',
     '/css/index.css',
 ];
 
