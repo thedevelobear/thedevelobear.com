@@ -9,6 +9,10 @@ enableRobotsTXT = true
 showSubscribe   = true
 title           = "Develobear - Front-end, React, CSS, Design blog."
 
+pygmentsCodefences = true
+pygmentsStyle = "rainbow_dash"
+pygmentsOptions = "linenos=true"
+
 [params]
   title       = "Develobear - Front-end, React, CSS, Design blog."
   subtitle    = "A blog for all the front-end develobears in the woods."

@@ -703,7 +703,6 @@ body {
     min-height: 300px;
     background: #fff 50%;
     background-size: cover;
-    border-radius: 5px;
     box-shadow: 8px 14px 38px rgba(39, 44, 49, .06), 1px 3px 8px rgba(39, 44, 49, .03);
     transition: all .5s ease
 }
@@ -1072,12 +1071,10 @@ body {
     margin: 1.5em 0 3em;
     padding: 20px;
     max-width: 100%;
-    border: 1px solid #000;
     color: #e5eff5;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.5em;
     background: #0e0f11;
-    border-radius: 5px
 }
 
 .post-full-content pre code {

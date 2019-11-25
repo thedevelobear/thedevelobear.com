@@ -252,3 +252,7 @@ a {
         overflow-y: hidden;
     }
 }
+
+.highlight pre {
+    box-shadow: 8px 14px 38px rgba(56, 95, 134, 0.1), 1px 3px 8px rgba(54, 126, 197, 0.03);
+}
