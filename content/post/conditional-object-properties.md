@@ -57,7 +57,7 @@ This structure feels a bit more complicated at first, but the value that it brin
 
 `...(nameChanged && { name: 'Beart' })` works just like `...nameChanged && { name: 'Beart' }` 
 
-### How it works? 
+### How does it work?
 
 If the condition evaluates to true, the expression will look like that:
 
