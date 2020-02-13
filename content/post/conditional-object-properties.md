@@ -3,7 +3,7 @@ author: "develobear"
 date: 2020-02-13
 slug: conditional-object-properties
 draft: false
-title: 'Conditional object properties in javascript'
+title: 'Conditional object properties in JavaScript'
 description: Add properties to objects conditionaly without if statements!
 weight: 10
 tags: [code]
