@@ -65,7 +65,7 @@ Combining huge, bold fonts with delicate, thin ones always worked great. In fact
 All right, this one wasn’t a part of Memphis Design. As far as I know, they didn’t use gradients back then. Nonetheless, I decided to include gradients because they look gorgeous in combination with previous mentioned designs. I often use [UI Gradients](https://uigradients.com/#Bighead) as a source of inspiration – they have some of the most beautiful gradients out there.
 
 {{< instagram Bo1sImiFx3P hidecaption >}}
-{{< instagram BwASv3qHBeW hidecaption >}}
+{{< instagram BzQv3NmgQkY hidecaption >}}
 
 JKJK, but if you really want to be cool, you can even get a gradient on your head.
 
