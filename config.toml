@@ -9,9 +9,10 @@ enableRobotsTXT = true
 showSubscribe   = true
 title           = "Develobear - Front-end, React, CSS, Design blog."
 
+pygmentsCodefencesGuessSyntax = true
 pygmentsCodefences = true
 pygmentsStyle = "rainbow_dash"
-pygmentsOptions = "linenos=true"
+pygmentsOptions = "linenos=table"
 
 [params]
   title       = "Develobear - Front-end, React, CSS, Design blog."

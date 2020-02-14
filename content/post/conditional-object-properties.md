@@ -83,7 +83,7 @@ The AND operator will ignore the object on the right, as the condition is falsy,
 
 which is then ignored by the spread operator (keep in mind that it will only work like that in object spread — not in the array spread). In the end we will be left with an empty object.
 
-## TL;DR / Extreme example
+## TL;DR
 
 Instead of:
 
