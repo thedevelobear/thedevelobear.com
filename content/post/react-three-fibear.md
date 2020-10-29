@@ -25,11 +25,11 @@ You can use all the elements provided by three.js, like *meshes*, *geometries* o
 What bugs me is that the documentation is limited in comparison to what react-three-fiber lets you do. For example, you can easily use a GLTF object exported from e.g. Blender or Maya, you can even use a compressed Draco version, but you need to import the GLTFLoader or DRACOLoader from the *three/examples/jsm/loaders*, and it's not documented anywhere.
 Unless you find it somewhere, it's not that easy to use it. One more thing is that three.js components are rendered through a shadow dom, so they're accessed without import statements. You'll see the examples later in this post. 
 
-Although the documentation lacks some key features it was a blast to write a 3d scene in React and run it in the browser.
+Although the documentation lacks some key features it was a blast to write a 3D scene in React and run it in the browser.
 
 ## My project
 ### Bear
-I wanted to give 3d modeling a shot, so I downloaded Blender, watched a few tutorials and created a model of a bear. What a surprise... LOL 😂
+I wanted to give 3D modeling a shot, so I downloaded Blender, watched a few tutorials and created a model of a bear. What a surprise... LOL 😂
 
 I then exported it to GLTF, used Google's Draco encoder and compressed it to DracoGLTF. 
 In order to use a DracoGLTF object in my scene, I needed to use a *useLoader* hook from react-three fiber. It was as easy as that:
@@ -229,7 +229,7 @@ Feel free to click around:
 
 ## Summary
 
-As you can see, the process itself is quite complicated, but I must say it's very satisfying, considering that you can access the 3d scenes everywhere — even on mobile phones!
+As you can see, the process itself is quite complicated, but I must say it's very satisfying, considering that you can access the 3D scenes everywhere — even on mobile phones!
 If you're interested in web development, and I guess you are if you're reading this blog post, you must try react-three-fiber. Despite its downsides and the amount of googling during development, it's a hell of a ride! You need to try it 😊
 
 If you got that far in this blog post — thank you! It means much to me! If you liked it, feel free to leave a comment below and keep having fun!
