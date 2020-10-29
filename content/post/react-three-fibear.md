@@ -15,7 +15,7 @@ comments: true
 
 So I decided to try out the *react-three-fiber* library, and it was... fun. I did enjoy the result, however the building process was a bit tiring. Let's dive deeper into that.
 
-First, you can check the project here:
+Firstly, you can check the project here:
 
 ➡️ https://thedevelobear.github.io/react-three-fibear/ ⬅️
 
