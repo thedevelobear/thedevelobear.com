@@ -2,7 +2,8 @@
 
 <body class="home-template"><div class="site-wrapper">
 
-{{ partial "header" . }}
+  {{if ne .Site.Params.singleViewStyle "casper"}}{{ partial "header" . }}
+  {{else}}{{ partial "header-sori" . }}{{end}}
 
 <main id="site-main" class="site-main outer" role="main">
   <div class="inner">
