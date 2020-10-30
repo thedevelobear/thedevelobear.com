@@ -221,7 +221,7 @@ I might write a separate blog post just about post-processing, shaders etc. in t
 
 <img src="/img/React-three-fibear/react-three-fibear.png" />
 
-Developing the whole thing took me a while, but I'm satisfied with the result!
+Developing the whole thing took me a whole weekend (the coding itself of course - creating a bear took much more than that 😄), but I'm satisfied with the result!
 
 Feel free to click around:
 
