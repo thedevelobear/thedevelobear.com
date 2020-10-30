@@ -1,4 +1,4 @@
-const CACHE_VERSION = 9;
+const CACHE_VERSION = 10;
 
 const BASE_CACHE_FILES = [
     '/android-chrome-192x192.png',
