@@ -221,7 +221,7 @@ I might write a separate blog post just about post-processing, shaders etc. in t
 
 <img src="/img/React-three-fibear/react-three-fibear.png" />
 
-Developing the whole thing took me a whole weekend (the coding itself of course - creating a bear took much more than that 😄), but I'm satisfied with the result!
+Developing the whole thing took me the whole weekend (the coding itself of course - creating a bear took much more than that 😄), but I'm satisfied with the result!
 
 Feel free to click around:
 
@@ -230,6 +230,6 @@ Feel free to click around:
 ## Summary
 
 As you can see, the process itself is quite complicated, but I must say it's very satisfying, considering that you can access the 3D scenes everywhere — even on mobile phones!
-If you're interested in web development, and I guess you are if you're reading this blog post, you must try react-three-fiber. Despite its downsides and the amount of googling during development, it's a hell of a ride! You need to try it 😊
+If you're interested in web development, and I guess you are if you're reading this blog post, you must try react-three-fiber. Despite its downsides and the amount of googling during development, it's one hell of a ride! You need to try it 😊
 
-If you got that far in this blog post — thank you! It means much to me! If you liked it, feel free to leave a comment below and keep having fun!
+If you got that far in this blog post — thank you! It means so much to me! If you liked it, feel free to leave a comment below and keep having fun!
