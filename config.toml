@@ -17,7 +17,7 @@ pygmentsOptions = "linenos=table"
 [params]
   title       = "Develobear - Front-end, React, CSS, Design blog."
   subtitle    = "A blog for all the front-end develobears in the woods."
-  copyright   = "©Develobear 2019"
+  copyright   = "©Develobear 2022"
 
   ogImage = "img/Bearground-og.png"
 

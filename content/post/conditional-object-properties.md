@@ -4,7 +4,7 @@ date: 2020-02-13
 slug: conditional-object-properties
 draft: false
 title: "Conditional object properties in JavaScript"
-description: Add properties to objects conditionaly without if statements!
+description: Add properties to objects conditionally without if statements!
 weight: 10
 tags: [code]
 authorAvatar: /img/Bear-avatar.png
@@ -14,7 +14,7 @@ comments: true
 
 ## Intro
 
-I’ve recently came upon a problem where I needed to conditionally add properties to an object. It’s not even that rare — there are plenty of API’s that require sending a field in payload only if it changed on the frontend. Don’t worry though, it’s easy to achieve.
+I’ve recently come upon a problem where I needed to conditionally add properties to an object. It’s not even that rare — there are plenty of API’s that require sending a field in payload only if it changed on the frontend. Don’t worry though, it’s easy to achieve.
 
 Let’s say we have a following object:
 
