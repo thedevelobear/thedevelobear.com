@@ -1,23 +1,18 @@
 # The Develobear mascot
 
-## Files
+## The bear on the site
 
-| File | Use |
-| --- | --- |
-| `assets/thedevelobearlogo.svg` | The original drawing. |
-| `public/img/mascot/bear.svg` | The same paths, cropped to the art, with shorter numbers. Home hero, About, 404, footer and social cards. |
+`public/img/mascot/bear.png` is the bear from the Amazon Cognito cover (`bearverless.jpg`). Its background was removed, the AWS logo painted out, and a wobbly ink line added along the edges between its flat colours. Nothing was redrawn. It is used on the home page, About, the 404 page, the footer (head and the top of the shirt) and social cards.
 
-Favicons in `public/` are exports of the head and do not update by themselves.
+It is a bitmap built from about 500 × 800 source pixels, with one pose and no separate parts.
 
-## Style
-
-One ink (`#231f20` (the site's ink)), flat shapes, wobbly hand-drawn edges. Eyes, teeth and inner ears are holes, so each post or section colour shows through. It therefore needs a light background, or the footer, where the head merges into the ink.
+Favicons in `public/` are separate files.
 
 ## Changing the art
 
-`lib/mascot.ts` is the only place that defines it: file, size (the viewBox), `belly` (where light text goes) and `headHeight` (where the footer cuts the head).
+`lib/mascot.ts` is the only place that defines it: file, size, `shirt` (where text goes) and `headHeight` (where the footer cuts the bear). The file must stay in `public/img/mascot/`.
 
-The drawing is three compound paths with no named parts. Adding props or recolouring works as it is. To pose it (move an arm, change the grin), export it with named groups: `head`, `eyes`, `mouth`, `body`, `arm-left`, `arm-right`, `legs`, each drawn complete behind any overlap.
+For a vector replacement: front-facing, full body, feet touching the bottom of the artboard, a plain light shirt front, flat fills, a closed ink outline, and named groups (`head`, `eyes`, `mouth`, `body`, `shirt`, `arm-left`, `arm-right`, `legs`).
 
 ## Covers for new posts
 

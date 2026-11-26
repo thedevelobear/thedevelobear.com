@@ -144,7 +144,7 @@ for (const path of ["/", "/projects/"]) {
 test("the reward demo respects reduced motion", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/projects/");
-  await page.getByRole("button", { name: "Balloons" }).click();
+  await page.getByRole("button", { name: "Confetti", exact: true }).click();
   await expect(page.locator("main output")).toContainText("reduced motion");
 });
 

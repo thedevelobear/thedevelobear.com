@@ -5,7 +5,7 @@ title: 5 things you can do to speed up your React app 🏎
 description: "Fortunately, this won’t be another post that just nags about technology being ahead of us or our inability to fully use it’s potential, but there is one thing I just have to complain about – we are lazy enough to just be OK with it. We don’t even try to pursue it."
 tags: [code]
 image: /img/5-things-to-improve-performance/Bearmula_One.png
-color: "#f1d596"
+color: "#ffc7c2"
 ---
 
 ## Short Intro

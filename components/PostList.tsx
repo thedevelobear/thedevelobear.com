@@ -2,7 +2,7 @@ import type { Post, Tag } from "@/lib/posts";
 import { PostCard } from "./PostCard";
 import { TagTabs } from "./TagTabs";
 
-const colors = { all: "bg-stone", code: "bg-tan", design: "bg-apricot" };
+const colors = { all: "bg-blush", code: "bg-rose", design: "bg-pink" };
 
 /** The /post/ and /tags/* pages: a title block, a wide lead card, then a grid. */
 export function PostList({
@@ -24,16 +24,18 @@ export function PostList({
           <TagTabs selected={tag} isCurrentPage />
         </div>
       </div>
-      <ul className="shell pile mt-12 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post, index) => (
-          <li
-            key={post.slug}
-            className={index === 0 ? "sm:col-span-2 lg:col-span-3" : ""}
-          >
-            <PostCard post={post} wide={index === 0} />
-          </li>
-        ))}
-      </ul>
+      <div className="bear-room bg-mauve pt-12">
+        <ul className="shell pile grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post, index) => (
+            <li
+              key={post.slug}
+              className={index === 0 ? "sm:col-span-2 lg:col-span-3" : ""}
+            >
+              <PostCard post={post} wide={index === 0} />
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }

@@ -5,21 +5,22 @@
   --font-display:
     var(--font-big-shoulders), "Display Fallback", "Arial Narrow", sans-serif;
 
-  /* Taken from the Ratatat "Classics" cover: charcoal, pale yellow, bronze,
-     plus the oranges and warm greys between them. ink, paper, sheet and honey
-     are repeated in lib/site.ts. */
-  --color-ink: #231f20;
-  --color-paper: #ebe8df;
-  --color-sheet: #f8f5ea;
-  --color-smudge: #dbd7cc;
+  /* The CRUSH studio palette (crush.enterprises): near-black, white, off-white
+     and pink. ink, paper, sheet and pink are repeated in lib/site.ts. */
+  --color-ink: #161616;
+  --color-paper: #ffffff;
+  --color-sheet: #f7f7f2;
+  --color-pink: #ffc7c2;
+  /* The pale flap of their receipt. */
+  --color-blush: #ffe3e0;
+  /* Not theirs: added to match. */
+  --color-smudge: #e8e8e2;
 
-  /* One flat colour per section. Only ink text goes on these. */
-  --color-honey: #efcf7e;
-  --color-apricot: #eaa965;
-  --color-tan: #bfa674;
-  --color-stone: #cbc6ba;
-  /* The one dark section colour: sheet text goes on it. */
-  --color-graphite: #3d3839;
+  /* One flat colour per section. Only ink text goes on these. Pages get darker
+     on the way down: pink, rose, then mauve above the footer. The last two are
+     added to match. */
+  --color-rose: #eda9a4;
+  --color-mauve: #d29591;
 
   --container-page: 76rem;
 }
@@ -36,6 +37,15 @@
   ascent-override: 146.6%;
   descent-override: 31.9%;
   line-gap-override: 0%;
+}
+
+/* Space under a page's last section, where the footer's bear peeks up. */
+@utility bear-room {
+  padding-bottom: 14rem;
+
+  @media (min-width: 40rem) {
+    padding-bottom: 18rem;
+  }
 }
 
 /* Tall hand-painted-sign headlines. Never used for running text. */
@@ -73,7 +83,7 @@
 
   ::selection {
     background: var(--color-ink);
-    color: var(--color-honey);
+    color: var(--color-pink);
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -98,10 +108,10 @@
 
   /* Black areas: a black focus ring would vanish. */
   .on-ink :focus-visible {
-    outline-color: var(--color-honey);
+    outline-color: var(--color-pink);
   }
   .on-ink ::selection {
-    background: var(--color-honey);
+    background: var(--color-pink);
     color: var(--color-ink);
   }
 

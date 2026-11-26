@@ -5,7 +5,7 @@ title: Microinteractions, halo effect, react-rewards. Reward your users for litt
 description: "Microinteractions are… let’s say they are events in our apps, that — when used wisely — create a moment of engagement and reward our users for the actions they did."
 tags: [design]
 image: /img/Microinteractions/Bearthday.png
-color: "#f2be88"
+color: "#eda9a4"
 ---
 
 ## Microinteractions? What is that!

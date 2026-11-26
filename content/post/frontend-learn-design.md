@@ -5,7 +5,7 @@ title: Should you learn design as a front-end developer?
 description: "This question can be used to provoke a looong discussion among front-end developers. Just like bringing up a topic of semi-colons in JavaScript, css-in-js or the best linter config (just try to bring up one of these, grab some popcorn and watch 👀🍿)."
 tags: [design]
 image: /img/Should-you-learn-design/Designbear.png
-color: "#dbd7cc"
+color: "#e8e8e2"
 ---
 
 ## Intro

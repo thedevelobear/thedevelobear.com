@@ -5,7 +5,7 @@ title: 'Chrome DevTools: using Logpoints for on-demand JavaScript debugging.'
 description: "Google Chrome v73 introduced a cool new feature I’d like to share with you. It’s called logpoints and it’s meant to make it easier to debug the source code of a web app."
 tags: [code]
 image: /img/Logpoints/Logpoints.png
-color: "#efcf7e"
+color: "#ffc7c2"
 ---
 
 ## Intro

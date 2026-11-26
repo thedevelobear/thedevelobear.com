@@ -31,7 +31,7 @@ export default function ProjectsPage() {
     <>
       <JsonLd data={jsonLd} />
       <JsonLd data={breadcrumbs(["Projects", "/projects/"])} />
-      <div className="bg-tan pt-32 pb-14 text-center sm:pt-40 sm:pb-20">
+      <div className="bg-pink pt-32 pb-14 text-center sm:pt-40 sm:pb-20">
         <div className="shell">
           <h1 className="display text-[clamp(4.5rem,16vw,12rem)] leading-[0.86]">
             Projects
