@@ -1,15 +1,11 @@
 ---
-author: "develobear"
 date: 2020-02-13
 slug: conditional-object-properties
-draft: false
 title: "Conditional object properties in JavaScript"
-description: Add properties to objects conditionally without if statements!
-weight: 10
+description: "Add properties to objects conditionally without if statements!"
 tags: [code]
-authorAvatar: /img/Bear-avatar.png
-image: img/Conditional-object-properties/conditional-object-properties.jpg
-comments: true
+image: /img/Conditional-object-properties/conditional-object-properties.jpg
+color: "#f0cbb5"
 ---
 
 ## Intro

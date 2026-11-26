@@ -1,0 +1,52 @@
+HOME
+ABOUT ME
+CODE
+DESIGN
+Subscribe
+Code
+A collection of 7 posts
+#CODE
+My take on react-three-fiber library
+
+So I decided to try out the react-three-fiber library, and it was… fun. I did enjoy the result, however the building process was a bit tiring. Let’s dive deeper into that.
+
+ develobear
+#CODE
+Conditional object properties in JavaScript
+
+Add properties to objects conditionally without if statements!
+
+ develobear
+#CODE
+How to customize verification emails in Amazon Cognito? Use Lambda!
+
+Cognito provides a way to verify the users, the developer should be responsible for customising how it looks like. The problem is that Cognito doesn’t provide a way to customize those messages easily.
+
+ develobear
+#CODE
+Chrome DevTools: using Logpoints for on-demand JavaScript debugging.
+
+Google Chrome v73 introduced a cool new feature I’d like to share with you. It’s called logpoints and it’s meant to make it easier to debug the source code of a web app.
+
+ develobear
+#CODE
+Logging and debugging in JavaScript. A few methods I use on a daily basis.
+
+I wrote this article to share a few debugging and logging methods I tend to use on a daily basis. I hope that at least some of them aren’t as popular as console.log, at least among the ones that just begin their journey with JavaScript.
+
+ develobear
+#CODE #DESIGN
+The impostor syndrome — do you suffer from it?
+
+Have you ever thought that you shouldn’t do something because others are better than you? Perhaps once in a while you are attacked by the feeling that you are cheating others?
+
+ develobear
+Page 1 of 2 
+Previous Posts →
+©Develobear 2022
+
+Latest Posts
+Twitter
+Github
+LinkedIn
+Medium

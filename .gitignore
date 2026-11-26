@@ -1,4 +1,21 @@
-/materials
-.idea
-/public
-.history
+/node_modules/
+/.next/
+/out/
+/.vercel/
+/.tmp/
+/.history/
+/.idea/
+.DS_Store
+.env*
+*.pem
+*.log
+*.tsbuildinfo
+next-env.d.ts
+# A screenshot of another company's blog, used only as a style reference.
+/docs/design-reference.png
+# Third-party screenshots used only as style references.
+/docs/inspiration/
+# Test and Lighthouse output.
+/test-results/
+/playwright-report/
+/.lighthouseci/

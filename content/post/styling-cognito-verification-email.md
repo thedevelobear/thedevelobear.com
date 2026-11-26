@@ -1,21 +1,18 @@
 ---
-author: "develobear"
 date: 2019-06-28
 slug: styling-cognito-verification-email
 title: How to customize verification emails in Amazon Cognito? Use Lambda!
-description: Cognito provides a way to verify the users, the developer should be responsible for customising how it looks like. The problem is that Cognito doesn’t provide a way to customize those messages easily.
-weight: 10
+description: "Cognito provides a way to verify the users, the developer should be responsible for customising how it looks like. The problem is that Cognito doesn’t provide a way to customize those messages easily."
 tags: [code]
-authorAvatar: /img/Bear-avatar.png
-image: img/Styling-cognito-verification-email/bearverless.jpg
-comments: true
+image: /img/Styling-cognito-verification-email/bearverless.jpg
+color: "#cbdde6"
 ---
 
 ## The problem
 
 Let’s say you want your users to be able to reset their passwords through Sign-in page inside your app. If you have e-mail verification enabled in Cognito (which in most cases you should have) the user will have to copy the received verification code from the e-mail and paste it in your app. The problem is that the e-mails sent from Cognito by default look like poop 💩
 
-<img src="/img/Styling-cognito-verification-email/default_email.png" />
+![The plain default verification email sent by Cognito](/img/Styling-cognito-verification-email/default_email.png)
 
 It’s understandable though – Cognito provides a way to verify the users, the developer should be responsible for customising how it looks like. **The problem** is that Cognito doesn’t provide a way to customize those messages easily. Under General settings -> Message customisations you can customize the MFA (Multi-Factor Authentication) message and your user invitation messages – but you can’t customize the verification email 🤷🏼‍♂️
 
@@ -29,11 +26,11 @@ In order to do that, you need to:
 
 **2.** Go to _functions_ tab and click _Create function_.
 
-<img src="/img/Styling-cognito-verification-email/blueprints.png" />
+![AWS Lambda console with the “Use a blueprint” option](/img/Styling-cognito-verification-email/blueprints.png)
 
 **3.** Click on _Use a blueprint_ card and search for _cognito-sync-trigger_ -> select the _cognito-sync-trigger_ card and press _Configure_ button.
 
-<img src="/img/Styling-cognito-verification-email/functions.png" />
+![The cognito-sync-trigger blueprint in the AWS Lambda console](/img/Styling-cognito-verification-email/functions.png)
 
 **4.** Basic information card:
 
@@ -51,7 +48,7 @@ You can Enable the trigger now, or create it in a disabled state for testing (yo
 
 **7.** **LOOK HERE IF YOU ONLY WANTED THE LAMBDA FUNCTION CODE** – Scroll down to the _Function code_ card.
 
-<img src="/img/Styling-cognito-verification-email/functions_editor.png" />
+![AWS Lambda function code editor](/img/Styling-cognito-verification-email/functions_editor.png)
 
 You’ll see a standard boilerplate function there. You can delete it and replace it with your own function. In my case it’ll look like that:
 
@@ -87,8 +84,8 @@ You can also use params from Cognito, like _`${event.userName}`_ which is replac
 
 The result should look something like that:
 
-<img src="/img/Styling-cognito-verification-email/email.png" />
+![The customised verification email](/img/Styling-cognito-verification-email/email.png)
 
 That’s it. It’s not hard to do that, but it took me a long time to get it working in the first place, so I thought I could share it with you.
 
-Hey, one more thing. I've created the graphics with the help of <a rel="noreferrer" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
+Hey, one more thing. I've created the graphics with the help of [www.vecteezy.com](https://vecteezy.com)

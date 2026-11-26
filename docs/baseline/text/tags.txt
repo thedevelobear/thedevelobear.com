@@ -1,0 +1,32 @@
+HOME
+ABOUT ME
+CODE
+DESIGN
+Subscribe
+Tags
+/  code (7) /  design (4) / 
+#CODE
+Conditional object properties in JavaScript
+
+Add properties to objects conditionally without if statements!
+
+ develobear
+#CODE #DESIGN
+The impostor syndrome — do you suffer from it?
+
+Have you ever thought that you shouldn’t do something because others are better than you? Perhaps once in a while you are attacked by the feeling that you are cheating others?
+
+ develobear
+#CODE
+How to customize verification emails in Amazon Cognito? Use Lambda!
+
+Cognito provides a way to verify the users, the developer should be responsible for customising how it looks like. The problem is that Cognito doesn’t provide a way to customize those messages easily.
+
+ develobear
+©Develobear 2022
+
+Latest Posts
+Twitter
+Github
+LinkedIn
+Medium

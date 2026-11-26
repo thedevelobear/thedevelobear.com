@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Develobear - Front-end, React, CSS, Design blog.</title>
+    <link>https://www.thedevelobear.com/post/</link>
+    <description>Recent content in Posts on Develobear - Front-end, React, CSS, Design blog.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 29 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.thedevelobear.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My take on react-three-fiber library</title>
+      <link>https://www.thedevelobear.com/post/react-three-fibear/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedevelobear.com/post/react-three-fibear/</guid>
+      <description>Short Intro So I decided to try out the react-three-fiber library, and it was&amp;hellip; fun. I did enjoy the result, however the building process was a bit tiring. Let&amp;rsquo;s dive deeper into that.
+Firstly, you can check the project here:
+➡️ https://thedevelobear.github.io/react-three-fibear/ ⬅️
+React-three-fiber library itself is great. It lets you build declarative scenes with re-usable components. Also, the render loop lives outside of React, so using React doesn&amp;rsquo;t influence the performance in comparison to pure three.</description>
+    </item>
+    
+    <item>
+      <title>Conditional object properties in JavaScript</title>
+      <link>https://www.thedevelobear.com/post/conditional-object-properties/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedevelobear.com/post/conditional-object-properties/</guid>
+      <description>Intro I’ve recently come upon a problem where I needed to conditionally add properties to an object. It’s not even that rare — there are plenty of API’s that require sending a field in payload only if it changed on the frontend. Don’t worry though, it’s easy to achieve.
+Let’s say we have a following object:
+1 2 3 4  const payload = { name: &amp;#34;Bearnard&amp;#34; };    We need to send only the fields that changed.</description>
+    </item>
+    
+    <item>
+      <title>How to customize verification emails in Amazon Cognito? Use Lambda!</title>
+      <link>https://www.thedevelobear.com/post/styling-cognito-verification-email/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedevelobear.com/post/styling-cognito-verification-email/</guid>
+      <description>The problem Let’s say you want your users to be able to reset their passwords through Sign-in page inside your app. If you have e-mail verification enabled in Cognito (which in most cases you should have) the user will have to copy the received verification code from the e-mail and paste it in your app. The problem is that the e-mails sent from Cognito by default look like poop 💩</description>
+    </item>
+    
+    <item>
+      <title>Chrome DevTools: using Logpoints for on-demand JavaScript debugging.</title>
+      <link>https://www.thedevelobear.com/post/logpoints/</link>
+      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedevelobear.com/post/logpoints/</guid>
+      <description>Intro This short post is an addition to my previous post about logging in JavaScript– Logging and debugging in JavaScript. A few methods I use on a daily basis.
+Google Chrome v73 introduced a cool new feature I’d like to share with you. It’s called logpoints and it’s meant to make it easier to debug the source code of a web app. It’s not a new concept, but now it’s accessible through Google Chrome and VSCode.</description>
+    </item>
+    
+    <item>
+      <title>Logging and debugging in JavaScript. A few methods I use on a daily basis.</title>
+      <link>https://www.thedevelobear.com/post/logging-and-debugging/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedevelobear.com/post/logging-and-debugging/</guid>
+      <description>A few methods I use on a daily basis. I wrote this article to share a few debugging and logging methods I tend to use on a daily basis. I hope that at least some of them aren’t as popular as console.log, at least among the ones that just begin their journey with JavaScript.
+1. console.log() I think the console.log method is pretty straight forward. However, if you’re new to web development, here is a quick description.</description>
+    </item>
+    
+    <item>
+      <title>Microinteractions, halo effect, react-rewards. Reward your users for little things and make them smile!</title>
+      <link>https://www.thedevelobear.com/post/microinteractions/</link>
+      <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedevelobear.com/post/microinteractions/</guid>
+      <description>Microinteractions? What is that! Microinteractions are… let’s say they are events in our apps, that — when used wisely — create a moment of engagement and reward our users for the actions they performed. They are tiny design elements that are meant to be welcoming and memorable so that users remember them and subconsciously keep coming back to your app.
+Microinteractions are meant to fulfill these main functions:
+ Provide instant feedback or the result of an action to the user Enhance the sense of direct manipulation Communicate information about certain elements, like whether it’s interactive Help users see the results of their actions (also by evoking positive emotions) From the point of view of the app owner — they are meant to make users come back to your app They just make your site more emotional and human-ish  The “What is that!</description>
+    </item>
+    
+    <item>
+      <title>The impostor syndrome — do you suffer from it?</title>
+      <link>https://www.thedevelobear.com/post/the-impostor-syndrome/</link>
+      <pubDate>Sun, 04 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedevelobear.com/post/the-impostor-syndrome/</guid>
+      <description>Have you ever thought that you shouldn’t do something because others are better than you? Perhaps once in a while you are attacked by the feeling that you are cheating others?
+I’ll start with a bold statement that I’m pretty sure that most of us suffer or at least suffered from the impostor syndrome. It doesn’t matter if you’ve just begun your journey in software development or you’ve been a well-paid, successful programmer for many years, you can and you will likely face the impostor syndrome.</description>
+    </item>
+    
+    <item>
+      <title>Should you learn design as a front-end developer?</title>
+      <link>https://www.thedevelobear.com/post/should-you-learn-design/</link>
+      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedevelobear.com/post/should-you-learn-design/</guid>
+      <description>Intro This question can be used to provoke a looong discussion among front-end developers. Just like bringing up a topic of semi-colons in JavaScript, css-in-js or the best linter config (just try to bring up one of these, grab some popcorn and watch 👀🍿). Basically, everyone has or at least should have their own opinion. This topic is no different but before we jump into the reasons why you should learn design we should clarify one thing.</description>
+    </item>
+    
+    <item>
+      <title>How to create a modern looking user interface? Get inspired by Memphis!</title>
+      <link>https://www.thedevelobear.com/post/modern-ui-with-memphis-design/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedevelobear.com/post/modern-ui-with-memphis-design/</guid>
+      <description>How to create a modern user interface? Get inspired by Memphis! 
+I won’t be writing about Memphis, Tennessee — neither about Memphis, Alabama; Memphis, Florida; Memphis, Indiana; Memphis, Michigan; Memphis, Mississippi; Memphis, Missouri; Memphis, Nebraska; Memphis, New York; Memphis, Ohio; Memphis, Texas; Memph… Of course, you can get inspired by these cities. You can even search for inspiration in Memphis, Egypt, which was the ancient capital of Lower Egypt.</description>
+    </item>
+    
+    <item>
+      <title>5 things you can do to speed up your React app 🏎</title>
+      <link>https://www.thedevelobear.com/post/5-things-to-improve-performance/</link>
+      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedevelobear.com/post/5-things-to-improve-performance/</guid>
+      <description>Short Intro It is a well-known fact that people aren’t able to use all the potential hidden inside their personal computers, laptops or even smartphones. Just stop for a second and look around: we have technology that is capable of doing things that we cannot possibly imagine, yet we struggle to create a website that doesn’t lag on the newest MacBook Pro or create an android app that won’t crash every now and then on an 8 gig snapdragon 845 smartphone.</description>
+    </item>
+    
+  </channel>
+</rss>

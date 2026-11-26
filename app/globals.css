@@ -1,0 +1,321 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-schibsted), ui-sans-serif, system-ui, sans-serif;
+  --font-display:
+    var(--font-big-shoulders), "Display Fallback", "Arial Narrow", sans-serif;
+
+  /* Base. ink, paper, sheet and honey are repeated in lib/site.ts. */
+  --color-ink: #161414;
+  --color-paper: #f4f3ee;
+  --color-sheet: #ffffff;
+  --color-smudge: #e6e4da;
+
+  /* One flat colour per section. Only ink text goes on these. */
+  --color-honey: #f3dfae;
+  --color-sky: #cbdde6;
+  --color-mint: #cfdcc8;
+  --color-pink: #f6cfcb;
+  --color-lime: #e0e4c0;
+  --color-coral: #efc3ae;
+  --color-lilac: #d8d0e6;
+  /* The one dark section colour: sheet text goes on it. */
+  --color-dusk: #353d50;
+
+  --container-page: 76rem;
+}
+
+/* next/font has no fallback metrics for Big Shoulders, so these are measured:
+   Arial Bold squeezed to its width, so huge headlines don't jump on load. */
+@font-face {
+  font-family: "Display Fallback";
+  src:
+    local("Arial Bold"), local("Arial-BoldMT"),
+    /* Same metrics, for Linux. */ local("Liberation Sans Bold");
+  font-weight: 100 900;
+  size-adjust: 67.2%;
+  ascent-override: 146.6%;
+  descent-override: 31.9%;
+  line-gap-override: 0%;
+}
+
+/* Tall hand-painted-sign headlines. Never used for running text. */
+@utility display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: 0.004em;
+  text-transform: uppercase;
+}
+
+/* A receipt's torn edge. */
+@utility zigzag-bottom {
+  mask:
+    conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg)
+    50% / 1rem 100%;
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-ink);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-honey);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    /* biome-ignore-start lint/complexity/noImportantStyles: must beat utilities. */
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+    /* biome-ignore-end lint/complexity/noImportantStyles: must beat utilities. */
+  }
+}
+
+@layer components {
+  .shell {
+    width: 100%;
+    max-width: var(--container-page);
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  /* Black areas: a black focus ring would vanish. */
+  .on-ink :focus-visible {
+    outline-color: var(--color-honey);
+  }
+  .on-ink ::selection {
+    background: var(--color-honey);
+    color: var(--color-ink);
+  }
+
+  /* A slightly crooked black label to press. */
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3.25rem;
+    padding: 0.5rem 1.5rem;
+    background: var(--color-ink);
+    color: var(--color-sheet);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    rotate: -1.5deg;
+    transition: rotate 0.15s;
+  }
+  .button:hover {
+    rotate: 1deg;
+  }
+
+  /* Underlined links that fill with ink on hover. */
+  .text-link {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+  }
+  .big-link {
+    display: inline-block;
+    padding-block: 0.375rem;
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.18em;
+  }
+  .text-link:hover,
+  .big-link:hover {
+    background: var(--color-ink);
+    color: var(--color-sheet);
+    text-decoration-color: var(--color-ink);
+  }
+
+  /* A piece of paper put down by hand: tilted, and straightened on hover. */
+  .tilt {
+    rotate: var(--tilt, -1deg);
+    transition: rotate 0.2s;
+  }
+  .tilt:is(:hover, :focus-within) {
+    rotate: 0deg;
+  }
+  .pile > :nth-child(3n + 2) {
+    --tilt: 0.9deg;
+  }
+  .pile > :nth-child(3n) {
+    --tilt: -0.4deg;
+  }
+
+  /* Post body copy: calm, wide enough, never condensed or all caps. */
+  .prose {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    overflow-wrap: break-word;
+
+    @media (min-width: 40rem) {
+      font-size: 1.1875rem;
+    }
+
+    & > * + * {
+      margin-top: 1.25em;
+    }
+    & > :first-child {
+      margin-top: 0;
+    }
+    /* Display face in mixed case: headings name things like console.log(). */
+    :is(h2, h3, h4, h5) {
+      font-family: var(--font-display);
+      font-weight: 800;
+      line-height: 1.04;
+      letter-spacing: 0.008em;
+      scroll-margin-top: 1.5rem;
+    }
+    & > h2 {
+      margin-top: 1.8em;
+      font-size: 2.35em;
+    }
+    & > h3 {
+      margin-top: 1.8em;
+      font-size: 1.8em;
+    }
+    & > :is(h4, h5) {
+      margin-top: 1.8em;
+      font-size: 1.4em;
+    }
+    & > :is(h2, h3, h4, h5) + * {
+      margin-top: 0.7em;
+    }
+    & > :is(h2, h3, h4, h5):first-child {
+      margin-top: 0;
+    }
+    strong {
+      font-weight: 800;
+    }
+    a {
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 0.2em;
+      /* Bare URLs must not widen the page. */
+      overflow-wrap: anywhere;
+    }
+    a:hover {
+      background: var(--color-ink);
+      color: var(--color-sheet);
+    }
+    :is(ul, ol) {
+      padding-left: 1.4em;
+    }
+    ul {
+      list-style: square;
+    }
+    ol {
+      list-style: decimal;
+    }
+    li + li {
+      margin-top: 0.5em;
+    }
+    ol > li::marker {
+      font-weight: 800;
+    }
+    li > :is(ul, ol) {
+      margin-top: 0.5em;
+    }
+    li > p + p {
+      margin-top: 0.75em;
+    }
+    blockquote {
+      padding: 1em 1.25em;
+      border-left: 0.5rem solid var(--color-ink);
+      background: var(--color-sheet);
+    }
+    blockquote > * + * {
+      margin-top: 0.5em;
+    }
+    /* Linked cards that replaced social embeds stack tightly. */
+    blockquote + blockquote {
+      margin-top: 0.75em;
+    }
+    hr {
+      border-top: 3px dashed var(--color-ink);
+    }
+    img,
+    video {
+      display: block;
+      margin-inline: auto;
+    }
+    video {
+      background: var(--color-ink);
+    }
+    /* A white paper edge, so screenshots with white backgrounds keep a shape. */
+    img {
+      outline: 1px solid var(--color-smudge);
+    }
+    table {
+      display: block;
+      overflow-x: auto;
+      border-collapse: collapse;
+    }
+    :is(th, td) {
+      padding: 0.5em 0.75em;
+      border: 2px solid var(--color-ink);
+      text-align: left;
+    }
+    :not(pre) > code {
+      padding: 0.1em 0.35em;
+      background: var(--color-smudge);
+      font-size: 0.875em;
+      overflow-wrap: anywhere;
+    }
+    pre {
+      overflow-x: auto;
+      padding-block: 1.125rem;
+      background: var(--color-ink);
+      color: #f0f3f6;
+      font-size: 0.8125rem;
+      line-height: 1.7;
+      tab-size: 2;
+
+      @media (min-width: 40rem) {
+        font-size: 0.875rem;
+      }
+    }
+    pre > code {
+      display: grid;
+      min-width: max-content;
+    }
+    pre [data-line] {
+      padding-inline: 1.25rem;
+    }
+  }
+}
