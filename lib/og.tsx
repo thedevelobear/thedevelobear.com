@@ -12,7 +12,7 @@ export async function ogImage(
   color = colors.honey,
 ) {
   const [font, bear] = await Promise.all([
-    readFile(join(process.cwd(), "assets/LondrinaSolid-Black.ttf")),
+    readFile(join(process.cwd(), "assets/BigShoulders-Display-ExtraBold.ttf")),
     readFile(
       join(
         process.cwd(),
@@ -79,7 +79,7 @@ export async function ogImage(
     </div>,
     {
       ...ogSize,
-      fonts: [{ name: "Londrina Solid", data: font, weight: 900 }],
+      fonts: [{ name: "Big Shoulders", data: font, weight: 800 }],
     },
   );
 }

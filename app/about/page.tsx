@@ -13,6 +13,10 @@ export const metadata: Metadata = pageMetadata({
 });
 
 const skills = [
+  [
+    "AI",
+    "Multi-agent orchestration, GitHub Copilot, MCP servers, agent skills",
+  ],
   ["Languages", "TypeScript, JavaScript, HTML, CSS"],
   [
     "Frontend",
@@ -28,10 +32,6 @@ const skills = [
     "Build and infrastructure",
     "Vite, Webpack, Rsbuild, Node.js, Docker, Azure, CI/CD, Nginx, Sentry, Datadog, EAS",
   ],
-  [
-    "AI",
-    "Multi-agent orchestration, GitHub Copilot, MCP servers, agent skills",
-  ],
 ];
 
 export default function AboutPage() {
@@ -45,9 +45,9 @@ export default function AboutPage() {
           </h1>
           <div className="mt-12 grid items-end gap-14 lg:grid-cols-[minmax(0,6fr)_minmax(0,5fr)]">
             <div className="max-w-xl space-y-5 font-semibold text-xl lg:self-center lg:pb-24">
-              <p>Hi, I’m Jakub Szewczyk, known online as Develobear.</p>
+              <p>Hi, I’m Jakub Szewczyk.</p>
               <p>
-                I’m a senior front-end engineer and tech lead in Wrocław,
+                I’m a senior software engineer and tech lead in Wrocław,
                 Poland, with more than a decade of experience building web and
                 mobile apps, mostly with React, React Native and TypeScript.
               </p>
@@ -98,29 +98,6 @@ export default function AboutPage() {
               </div>
             ))}
           </dl>
-          <p className="mt-4">
-            My articles show some of what I’ve worked with:{" "}
-            <PostLink slug="5-things-to-improve-performance">
-              React performance
-            </PostLink>
-            ,{" "}
-            <PostLink slug="logging-and-debugging">
-              JavaScript debugging
-            </PostLink>
-            ,{" "}
-            <PostLink slug="react-three-fibear">
-              3D with react-three-fiber
-            </PostLink>
-            ,{" "}
-            <PostLink slug="styling-cognito-verification-email">
-              AWS Cognito with Lambda
-            </PostLink>{" "}
-            and{" "}
-            <PostLink slug="modern-ui-with-memphis-design">
-              interface design
-            </PostLink>
-            .
-          </p>
         </Section>
         <Section title="Projects">
           <p>

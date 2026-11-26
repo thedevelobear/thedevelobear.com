@@ -90,9 +90,6 @@ export function RewardsCard({ headingLevel: Heading, detailed }: CardProps) {
           </p>
         </div>
         <div>
-          <p className="display mx-auto mb-8 max-w-md text-balance text-center text-[clamp(3rem,6vw,4.5rem)]">
-            Go on, reward yourself.
-          </p>
           <RewardDemo />
         </div>
       </div>

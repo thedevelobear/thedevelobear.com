@@ -20,7 +20,7 @@ export function Header() {
               <li key={href}>
                 <Link
                   href={href}
-                  className="display inline-flex min-h-11 items-center px-1.5 text-lg decoration-3 min-[24rem]:px-2 min-[24rem]:text-[1.375rem] underline-offset-4 hover:underline sm:text-[1.75rem]"
+                  className="display inline-flex min-h-11 items-center px-1.5 text-xl decoration-3 min-[24rem]:px-2 min-[24rem]:text-[1.375rem] underline-offset-4 hover:underline sm:text-[1.75rem]"
                 >
                   {name}
                 </Link>

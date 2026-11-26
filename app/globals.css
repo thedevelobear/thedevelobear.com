@@ -3,7 +3,7 @@
 @theme {
   --font-sans: var(--font-schibsted), ui-sans-serif, system-ui, sans-serif;
   --font-display:
-    var(--font-londrina), "Display Fallback", "Arial Narrow", sans-serif;
+    var(--font-big-shoulders), "Display Fallback", "Arial Narrow", sans-serif;
 
   /* Taken from the Ratatat "Classics" cover: charcoal, pale yellow, bronze,
      plus the oranges and warm greys between them. ink, paper, sheet and honey
@@ -24,7 +24,7 @@
   --container-page: 76rem;
 }
 
-/* next/font has no fallback metrics for Londrina Solid, so these are measured:
+/* next/font has no fallback metrics for Big Shoulders, so these are measured:
    Arial Bold squeezed to its width, so huge headlines don't jump on load. */
 @font-face {
   font-family: "Display Fallback";
@@ -32,18 +32,18 @@
     local("Arial Bold"), local("Arial-BoldMT"),
     /* Same metrics, for Linux. */ local("Liberation Sans Bold");
   font-weight: 100 900;
-  size-adjust: 70.7%;
-  ascent-override: 134.4%;
-  descent-override: 34%;
+  size-adjust: 67.2%;
+  ascent-override: 146.6%;
+  descent-override: 31.9%;
   line-gap-override: 0%;
 }
 
-/* Hand-cut poster headlines. Never used for running text. */
+/* Tall hand-painted-sign headlines. Never used for running text. */
 @utility display {
   font-family: var(--font-display);
-  font-weight: 900;
-  line-height: 0.96;
-  letter-spacing: 0.01em;
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: 0.004em;
   text-transform: uppercase;
 }
 
@@ -117,7 +117,7 @@
     color: var(--color-sheet);
     font-family: var(--font-display);
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 1;
     text-transform: uppercase;
     rotate: -1.5deg;
@@ -145,7 +145,7 @@
     margin-inline: -0.5rem;
     font-family: var(--font-display);
     font-size: 1.75rem;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 1;
     text-transform: uppercase;
     text-decoration: underline;
@@ -193,8 +193,8 @@
     /* Display face in mixed case: headings name things like console.log(). */
     :is(h2, h3, h4, h5) {
       font-family: var(--font-display);
-      font-weight: 900;
-      line-height: 1.08;
+      font-weight: 800;
+      line-height: 1.04;
       letter-spacing: 0.008em;
       scroll-margin-top: 1.5rem;
     }

@@ -37,7 +37,7 @@ export function PostCard({
       </div>
       <div className="flex flex-1 flex-col gap-3">
         <Heading
-          className={`display wrap-break-word ${wide ? "text-[clamp(2rem,5vw,3.75rem)]" : "text-[2.125rem]"}`}
+          className={`display wrap-break-word ${wide ? "text-[clamp(2.25rem,5vw,3.75rem)]" : "text-[2.125rem]"}`}
         >
           <Link
             href={`/post/${post.slug}/`}
