@@ -5,7 +5,7 @@ title: How to create a modern looking user interface? Get inspired by Memphis!
 description: "The movement itself was created in 1981 by Ettore Sottsass — an Italian architect and designer. Sottsass organized a meeting with other designers after which they officially formed a design collaborative named Memphis."
 tags: [design]
 image: /img/Memphis-design/Bearphis_design.png
-color: "#d8d0e6"
+color: "#e59a57"
 ---
 
 ## How to create a modern user interface? Get inspired by Memphis!

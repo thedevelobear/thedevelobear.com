@@ -25,6 +25,21 @@ const securityHeaders = [
   { key: "Content-Security-Policy", value: "frame-ancestors 'none'" },
 ];
 
+// Syntax colours from the site's palette. All pass AA on ink.
+const codeTheme = {
+  name: "develobear",
+  type: "dark",
+  colors: { "editor.foreground": "#ebe8df", "editor.background": "#231f20" },
+  tokenColors: Object.entries({
+    "#aaa497": ["comment"],
+    "#eaa965": ["keyword", "storage", "entity.name.tag"],
+    "#f6dd86": ["string"],
+    "#d6bd88": ["constant", "support", "variable.language"],
+    "#efcf7e": ["entity.name", "support.function", "entity.other"],
+    "#ebe8df": ["keyword.operator", "punctuation"],
+  }).map(([foreground, scope]) => ({ scope, settings: { foreground } })),
+};
+
 const nextConfig: NextConfig = {
   trailingSlash: true,
   poweredByHeader: false,
@@ -65,9 +80,8 @@ export default createMDX({
       "rehype-slug",
       [
         "rehype-pretty-code",
-        // High contrast: the regular GitHub themes fail WCAG AA on comments.
         {
-          theme: "github-dark-high-contrast",
+          theme: codeTheme,
           // globals.css paints the block in the site's own ink.
           keepBackground: false,
           defaultLang: "plaintext",

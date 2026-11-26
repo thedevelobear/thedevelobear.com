@@ -5,7 +5,7 @@ title: My take on react-three-fiber library
 description: "So I decided to try out the react-three-fiber library, and it was... fun. I did enjoy the result, however the building process was a bit tiring. Let's dive deeper into that."
 tags: [code]
 image: /img/React-three-fibear/react-three-fibear.png
-color: "#e0e4c0"
+color: "#bfa674"
 ---
 
 ## Short Intro

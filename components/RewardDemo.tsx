@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Burst } from "./Burst";
 
 const effects = [
   { id: "confetti", label: "Confetti" },
@@ -11,6 +12,9 @@ const effects = [
 ] as const;
 
 type EffectId = (typeof effects)[number]["id"];
+
+// The page's own yellows, oranges and greys (see globals.css).
+const colors = ["#efcf7e", "#f6dd86", "#eaa965", "#bfa674", "#cbc6ba"];
 
 // Imported on first interaction, so the page ships none of it up front.
 const loadLibrary = () => import("react-rewards");
@@ -30,7 +34,7 @@ export function RewardDemo() {
       const library = await loadLibrary();
       const { renderer } = library.fire(library[id], {
         origin,
-        config: id === "emoji" ? { emojis: ["🐻", "🍯", "✨"] } : undefined,
+        config: id === "emoji" ? { emojis: ["🐻", "🍯", "✨"] } : { colors },
       });
       if (renderer) {
         setStatus(
@@ -60,8 +64,9 @@ export function RewardDemo() {
             onPointerEnter={preload}
             onFocus={preload}
             onClick={(event) => run(id, event.currentTarget)}
-            className="display size-24 cursor-pointer rounded-full bg-sheet text-[1.5rem] text-ink transition-[rotate,scale] duration-150 even:rotate-6 odd:-rotate-6 hover:rotate-0 hover:scale-105 active:scale-90 data-[selected=true]:bg-honey sm:size-32 sm:text-[2rem]"
+            className="group display relative isolate grid size-24 cursor-pointer place-items-center rounded-full text-[1.25rem] text-ink transition-[scale] duration-150 active:scale-90 sm:size-32 sm:text-[1.625rem]"
           >
+            <Burst className="-z-10 absolute inset-0 size-full fill-sheet transition-[rotate] duration-300 group-hover:rotate-12 group-data-[selected=true]:fill-honey" />
             {label}
           </button>
         ))}

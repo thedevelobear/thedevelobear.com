@@ -1,8 +1,7 @@
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata, Viewport } from "next";
-import { Schibsted_Grotesk } from "next/font/google";
-import localFont from "next/font/local";
+import { Londrina_Solid, Schibsted_Grotesk } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
@@ -21,16 +20,14 @@ const schibsted = Schibsted_Grotesk({
   variable: "--font-schibsted",
 });
 
-// Condensed headlines; optical sizing picks the display cut when large. Only
-// weight 800 is used, so this is Google's latin file with that weight pinned and
-// the opsz axis kept: 23 kB, where next/font/google can only serve all weights
-// (58 kB). globals.css defines "Display Fallback".
-// shortcut: latin only, add the latin-ext file if a heading ever needs it
-// (lib/posts.test.ts fails first).
-const bigShoulders = localFont({
-  src: "../assets/BigShoulders-opsz-800.woff2",
-  weight: "800",
-  variable: "--font-big-shoulders",
+// Headlines, hand-cut like the lettering on a record sticker. globals.css
+// defines "Display Fallback".
+// shortcut: this face is latin only; pick another if a heading ever needs
+// latin-ext (lib/posts.test.ts fails first).
+const londrina = Londrina_Solid({
+  subsets: ["latin"],
+  weight: "900",
+  variable: "--font-londrina",
   adjustFontFallback: false,
 });
 
@@ -78,10 +75,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${schibsted.variable} ${bigShoulders.variable}`}
-    >
+    <html lang="en" className={`${schibsted.variable} ${londrina.variable}`}>
       <body>
         <a
           href="#main"

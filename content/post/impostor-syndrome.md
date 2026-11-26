@@ -5,7 +5,7 @@ title: The impostor syndrome — do you suffer from it?
 description: "Have you ever thought that you shouldn’t do something because others are better than you? Perhaps once in a while you are attacked by the feeling that you are cheating others?"
 tags: [code, design]
 image: /img/The-impostor-syndrome/Dreambear.png
-color: "#efe3bb"
+color: "#f6dd86"
 ---
 
 **Have you ever thought that you shouldn’t do something because others are better than you? Perhaps once in a while you are attacked by the feeling that you are cheating others?**

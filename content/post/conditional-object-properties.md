@@ -5,7 +5,7 @@ title: "Conditional object properties in JavaScript"
 description: "Add properties to objects conditionally without if statements!"
 tags: [code]
 image: /img/Conditional-object-properties/conditional-object-properties.jpg
-color: "#f0cbb5"
+color: "#eaa965"
 ---
 
 ## Intro

@@ -5,10 +5,10 @@ export const siteDescription =
   "Develobear’s blog and portfolio: articles on JavaScript, React and interface design, plus react-rewards and human-o-matic.";
 /** Shared with app/globals.css, for places that can't read CSS. */
 export const colors = {
-  ink: "#161414",
-  paper: "#f4f3ee",
-  sheet: "#ffffff",
-  honey: "#f3dfae",
+  ink: "#231f20",
+  paper: "#ebe8df",
+  sheet: "#f8f5ea",
+  honey: "#efcf7e",
 };
 export const themeColor = colors.honey;
 export const twitterHandle = "@thedevelobear";

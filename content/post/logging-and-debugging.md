@@ -5,7 +5,7 @@ title: Logging and debugging in JavaScript. A few methods I use on a daily basis
 description: "I wrote this article to share a few debugging and logging methods I tend to use on a daily basis. I hope that at least some of them aren’t as popular as console.log, at least among the ones that just begin their journey with JavaScript."
 tags: [code]
 image: /img/Logging-and-debugging/BearLogging.jpg
-color: "#cfdcc8"
+color: "#d6c196"
 ---
 
 ## A few methods I use on a daily basis.

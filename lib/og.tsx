@@ -12,7 +12,7 @@ export async function ogImage(
   color = colors.honey,
 ) {
   const [font, bear] = await Promise.all([
-    readFile(join(process.cwd(), "assets/BigShoulders-Display-ExtraBold.ttf")),
+    readFile(join(process.cwd(), "assets/LondrinaSolid-Black.ttf")),
     readFile(
       join(
         process.cwd(),
@@ -60,17 +60,7 @@ export async function ogImage(
           padding: "52px 0 48px 64px",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            padding: "6px 18px 10px",
-            background: colors.ink,
-            color: colors.sheet,
-            fontSize: 44,
-            lineHeight: 1,
-            transform: "rotate(-4deg)",
-          }}
-        >
+        <div style={{ display: "flex", fontSize: 48, lineHeight: 1 }}>
           {siteName}
         </div>
         <div style={{ display: "flex", fontSize, lineHeight: 0.98 }}>
@@ -89,7 +79,7 @@ export async function ogImage(
     </div>,
     {
       ...ogSize,
-      fonts: [{ name: "Big Shoulders", data: font, weight: 800 }],
+      fonts: [{ name: "Londrina Solid", data: font, weight: 900 }],
     },
   );
 }

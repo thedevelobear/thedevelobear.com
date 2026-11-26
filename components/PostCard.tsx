@@ -17,12 +17,10 @@ export function PostCard({
   return (
     <article
       style={{ backgroundColor: post.color }}
-      className={`tilt group relative flex h-full flex-col gap-5 p-4 pb-5 has-[a:focus-visible]:outline-3 has-[a:focus-visible]:outline-ink has-[a:focus-visible]:outline-offset-3 sm:p-5 ${wide ? "[--tilt:-0.3deg] lg:grid lg:grid-cols-[7fr_5fr] lg:items-center lg:gap-10 lg:p-8" : ""}`}
+      className={`group hover:-translate-x-1 hover:-translate-y-1 relative flex h-full flex-col gap-5 p-4 pb-5 transition-[translate,box-shadow] duration-150 hover:shadow-[0.5rem_0.5rem_0_var(--color-ink)] has-[a:focus-visible]:outline-3 has-[a:focus-visible]:outline-ink has-[a:focus-visible]:outline-offset-3 sm:p-5 ${wide ? "lg:grid lg:grid-cols-[7fr_5fr] lg:items-center lg:gap-10 lg:p-8" : ""}`}
     >
-      {/* The cover art, as a print stuck on the tile. */}
-      <div
-        className={`rotate-1 bg-sheet p-2 transition-[rotate] duration-200 group-hover:-rotate-1 ${wide ? "lg:-rotate-1 lg:p-3 lg:group-hover:rotate-0" : ""}`}
-      >
+      {/* The cover art, as a print on the tile. */}
+      <div className={`bg-sheet p-2 ${wide ? "lg:p-3" : ""}`}>
         <PostImage
           src={post.image}
           alt=""
@@ -37,7 +35,7 @@ export function PostCard({
       </div>
       <div className="flex flex-1 flex-col gap-3">
         <Heading
-          className={`display ${wide ? "text-[clamp(2.25rem,5vw,3.75rem)]" : "text-[2.125rem]"}`}
+          className={`display wrap-break-word ${wide ? "text-[clamp(2rem,5vw,3.75rem)]" : "text-[2.125rem]"}`}
         >
           <Link
             href={`/post/${post.slug}/`}

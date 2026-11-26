@@ -122,7 +122,7 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <section className="grid gap-4 border-ink border-dashed py-10 first:pt-0 last:pb-0 md:grid-cols-[17rem_1fr] [&+&]:border-t-3">
+    <section className="grid gap-4 border-ink py-10 first:pt-0 last:pb-0 md:grid-cols-[17rem_1fr] [&+&]:border-t-3">
       <h2 className="display text-[3.25rem]">{title}</h2>
       <div className="max-w-2xl text-lg">{children}</div>
     </section>

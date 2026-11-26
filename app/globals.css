@@ -3,29 +3,28 @@
 @theme {
   --font-sans: var(--font-schibsted), ui-sans-serif, system-ui, sans-serif;
   --font-display:
-    var(--font-big-shoulders), "Display Fallback", "Arial Narrow", sans-serif;
+    var(--font-londrina), "Display Fallback", "Arial Narrow", sans-serif;
 
-  /* Base. ink, paper, sheet and honey are repeated in lib/site.ts. */
-  --color-ink: #161414;
-  --color-paper: #f4f3ee;
-  --color-sheet: #ffffff;
-  --color-smudge: #e6e4da;
+  /* Taken from the Ratatat "Classics" cover: charcoal, pale yellow, bronze,
+     plus the oranges and warm greys between them. ink, paper, sheet and honey
+     are repeated in lib/site.ts. */
+  --color-ink: #231f20;
+  --color-paper: #ebe8df;
+  --color-sheet: #f8f5ea;
+  --color-smudge: #dbd7cc;
 
   /* One flat colour per section. Only ink text goes on these. */
-  --color-honey: #f3dfae;
-  --color-sky: #cbdde6;
-  --color-mint: #cfdcc8;
-  --color-pink: #f6cfcb;
-  --color-lime: #e0e4c0;
-  --color-coral: #efc3ae;
-  --color-lilac: #d8d0e6;
+  --color-honey: #efcf7e;
+  --color-apricot: #eaa965;
+  --color-tan: #bfa674;
+  --color-stone: #cbc6ba;
   /* The one dark section colour: sheet text goes on it. */
-  --color-dusk: #353d50;
+  --color-graphite: #3d3839;
 
   --container-page: 76rem;
 }
 
-/* next/font has no fallback metrics for Big Shoulders, so these are measured:
+/* next/font has no fallback metrics for Londrina Solid, so these are measured:
    Arial Bold squeezed to its width, so huge headlines don't jump on load. */
 @font-face {
   font-family: "Display Fallback";
@@ -33,26 +32,19 @@
     local("Arial Bold"), local("Arial-BoldMT"),
     /* Same metrics, for Linux. */ local("Liberation Sans Bold");
   font-weight: 100 900;
-  size-adjust: 67.2%;
-  ascent-override: 146.6%;
-  descent-override: 31.9%;
+  size-adjust: 70.7%;
+  ascent-override: 134.4%;
+  descent-override: 34%;
   line-gap-override: 0%;
 }
 
-/* Tall hand-painted-sign headlines. Never used for running text. */
+/* Hand-cut poster headlines. Never used for running text. */
 @utility display {
   font-family: var(--font-display);
-  font-weight: 800;
-  line-height: 0.92;
-  letter-spacing: 0.004em;
+  font-weight: 900;
+  line-height: 0.96;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
-}
-
-/* A receipt's torn edge. */
-@utility zigzag-bottom {
-  mask:
-    conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg)
-    50% / 1rem 100%;
 }
 
 @layer base {
@@ -113,7 +105,7 @@
     color: var(--color-ink);
   }
 
-  /* A slightly crooked black label to press. */
+  /* A solid block to press, lifting off its orange shadow. */
   .button {
     display: inline-flex;
     align-items: center;
@@ -125,14 +117,17 @@
     color: var(--color-sheet);
     font-family: var(--font-display);
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
-    rotate: -1.5deg;
-    transition: rotate 0.15s;
+    box-shadow: 0.3rem 0.3rem 0 var(--color-apricot);
+    transition:
+      translate 0.15s,
+      box-shadow 0.15s;
   }
   .button:hover {
-    rotate: 1deg;
+    translate: -2px -2px;
+    box-shadow: 0.45rem 0.45rem 0 var(--color-apricot);
   }
 
   /* Underlined links that fill with ink on hover. */
@@ -147,7 +142,7 @@
     padding-block: 0.375rem;
     font-family: var(--font-display);
     font-size: 1.75rem;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
     text-decoration: underline;
@@ -159,21 +154,6 @@
     background: var(--color-ink);
     color: var(--color-sheet);
     text-decoration-color: var(--color-ink);
-  }
-
-  /* A piece of paper put down by hand: tilted, and straightened on hover. */
-  .tilt {
-    rotate: var(--tilt, -1deg);
-    transition: rotate 0.2s;
-  }
-  .tilt:is(:hover, :focus-within) {
-    rotate: 0deg;
-  }
-  .pile > :nth-child(3n + 2) {
-    --tilt: 0.9deg;
-  }
-  .pile > :nth-child(3n) {
-    --tilt: -0.4deg;
   }
 
   /* Post body copy: calm, wide enough, never condensed or all caps. */
@@ -195,8 +175,8 @@
     /* Display face in mixed case: headings name things like console.log(). */
     :is(h2, h3, h4, h5) {
       font-family: var(--font-display);
-      font-weight: 800;
-      line-height: 1.04;
+      font-weight: 900;
+      line-height: 1.08;
       letter-spacing: 0.008em;
       scroll-margin-top: 1.5rem;
     }
@@ -267,7 +247,7 @@
       margin-top: 0.75em;
     }
     hr {
-      border-top: 3px dashed var(--color-ink);
+      border-top: 3px solid var(--color-ink);
     }
     img,
     video {
@@ -277,7 +257,7 @@
     video {
       background: var(--color-ink);
     }
-    /* A white paper edge, so screenshots with white backgrounds keep a shape. */
+    /* A paper edge, so screenshots with pale backgrounds keep a shape. */
     img {
       outline: 1px solid var(--color-smudge);
     }
@@ -301,7 +281,7 @@
       overflow-x: auto;
       padding-block: 1.125rem;
       background: var(--color-ink);
-      color: #f0f3f6;
+      color: var(--color-paper);
       font-size: 0.8125rem;
       line-height: 1.7;
       tab-size: 2;

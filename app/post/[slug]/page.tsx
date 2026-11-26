@@ -38,7 +38,7 @@ export default async function PostPage({ params }: PageProps<"/post/[slug]">) {
     {
       post: posts[index - 1],
       label: "Newer article",
-      align: "sm:col-start-2 sm:text-right [--tilt:1deg]",
+      align: "sm:col-start-2 sm:text-right",
     },
   ];
   const { default: Content } = await import(`@/content/post/${post.file}.md`);
@@ -74,7 +74,7 @@ export default async function PostPage({ params }: PageProps<"/post/[slug]">) {
                 <li key={tag}>
                   <Link
                     href={`/tags/${tag}/`}
-                    className="display on-ink -rotate-3 inline-flex min-h-10 items-center bg-ink px-4 text-2xl text-sheet transition-[rotate] hover:rotate-2"
+                    className="display on-ink inline-flex min-h-10 items-center bg-ink px-4 text-2xl text-sheet hover:text-honey"
                   >
                     {tag}
                   </Link>
@@ -93,7 +93,7 @@ export default async function PostPage({ params }: PageProps<"/post/[slug]">) {
 
         {/* The cover art, as a print laid across the edge of the colour. */}
         <div className="-mt-24 sm:-mt-32 mx-auto max-w-4xl px-4 sm:px-5">
-          <div className="-rotate-1 bg-sheet p-2 sm:p-3">
+          <div className="bg-sheet p-2 sm:p-3">
             <PostImage
               src={post.image}
               alt=""
@@ -106,7 +106,7 @@ export default async function PostPage({ params }: PageProps<"/post/[slug]">) {
 
         <div className="mx-auto max-w-[44rem] px-5 pt-12 sm:pt-16">
           {isOutdated(post.date) && (
-            <p className="-rotate-1 mb-12 border-3 border-ink border-dashed bg-sheet px-5 py-4 font-semibold">
+            <p className="mb-12 border-ink border-l-8 bg-sheet px-5 py-4 font-semibold">
               This is an older post, so some details may be outdated.
             </p>
           )}
@@ -134,7 +134,7 @@ export default async function PostPage({ params }: PageProps<"/post/[slug]">) {
                 key={neighbour.label}
                 href={`/post/${neighbour.post.slug}/`}
                 style={{ backgroundColor: neighbour.post.color }}
-                className={`tilt group block p-6 ${neighbour.align}`}
+                className={`group hover:-translate-x-1 hover:-translate-y-1 block p-6 transition-[translate,box-shadow] duration-150 hover:shadow-[0.5rem_0.5rem_0_var(--color-ink)] ${neighbour.align}`}
               >
                 <span className="block font-semibold text-sm">
                   {neighbour.label}

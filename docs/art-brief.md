@@ -11,7 +11,7 @@ Favicons in `public/` are exports of the head and do not update by themselves.
 
 ## Style
 
-One ink (`#161616`), flat shapes, wobbly hand-drawn edges. Eyes, teeth and inner ears are holes, so each post or section colour shows through. It therefore needs a light background, or the footer, where the head merges into the ink.
+One ink (`#231f20` (the site's ink)), flat shapes, wobbly hand-drawn edges. Eyes, teeth and inner ears are holes, so each post or section colour shows through. It therefore needs a light background, or the footer, where the head merges into the ink.
 
 ## Changing the art
 

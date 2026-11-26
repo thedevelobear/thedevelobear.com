@@ -15,12 +15,9 @@ const columns =
 
 function Features({ items }: { items: string[] }) {
   return (
-    <ul className="mt-7 border-current border-t-3 border-dashed font-semibold">
+    <ul className="mt-7 border-current/30 border-t-3 font-semibold">
       {items.map((item) => (
-        <li
-          key={item}
-          className="border-current border-b-3 border-dashed py-2.5"
-        >
+        <li key={item} className="border-current/30 border-b-3 py-2.5">
           {item}
         </li>
       ))}
@@ -46,12 +43,10 @@ async function RewardsStats() {
   if (stats.length === 0) return null;
 
   return (
-    <ul className="display mt-7 flex flex-col gap-3 text-[1.75rem] sm:text-[2rem]">
+    <ul className="display mt-7 flex flex-col gap-2 text-[1.75rem] sm:text-[2rem]">
       {stats.map(([value, label]) => (
-        <li key={label} className="flex items-center gap-3">
-          <span className="-rotate-2 bg-honey px-2 pt-1 pb-0.5 text-ink">
-            {value}
-          </span>{" "}
+        <li key={label} className="flex items-baseline gap-3">
+          <span className="text-[1.5em] text-honey leading-none">{value}</span>{" "}
           {label}
         </li>
       ))}
@@ -62,7 +57,10 @@ async function RewardsStats() {
 export function RewardsCard({ headingLevel: Heading, detailed }: CardProps) {
   const { links } = rewards;
   return (
-    <article id="react-rewards" className={`${band} on-ink bg-dusk text-sheet`}>
+    <article
+      id="react-rewards"
+      className={`${band} on-ink bg-graphite text-sheet`}
+    >
       <div className={columns}>
         <div>
           <Heading className={title}>{rewards.name}</Heading>
@@ -111,7 +109,7 @@ export function HumanOMaticCard({
     ? humanOMatic.dialogue
     : humanOMatic.dialogue.slice(-3);
   return (
-    <article className={`${band} bg-lilac`}>
+    <article className={`${band} bg-apricot`}>
       <div className={columns}>
         <div className="lg:order-last">
           <Heading className={title}>{humanOMatic.name}</Heading>
@@ -128,16 +126,16 @@ export function HumanOMaticCard({
             </a>
           </div>
         </div>
-        {/* The conversation, printed out as a receipt. */}
+        {/* The conversation, as two voices answering each other. */}
         <figure className="mx-auto w-full max-w-md">
-          <ol className="zigzag-bottom -rotate-1 bg-ink px-6 pt-3 pb-8 text-sheet sm:px-8">
+          <ol className="flex flex-col gap-4">
             {lines.map(([speaker, text]) => (
               <li
                 key={text}
-                className={`border-sheet/60 border-dashed py-4 [&+li]:border-t-2 ${speaker === "You" ? "pl-10 text-right" : "pr-6"}`}
+                className={`px-6 py-4 ${speaker === "You" ? "ml-12 self-end bg-sheet text-right" : "on-ink mr-8 self-start bg-ink text-sheet"}`}
               >
                 <span
-                  className={`display block text-3xl ${speaker === "You" ? "text-honey" : "text-lilac"}`}
+                  className={`display block text-3xl ${speaker === "You" ? "" : "text-honey"}`}
                 >
                   {speaker}
                 </span>

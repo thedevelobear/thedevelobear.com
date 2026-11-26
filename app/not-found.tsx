@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: "Page not found | Develobear" };
 
 export default function NotFound() {
   return (
-    <div className="bg-coral pt-28 sm:pt-36">
+    <div className="bg-apricot pt-28 sm:pt-36">
       <div className="shell flex flex-col items-center text-center">
         <h1 className="display text-[clamp(4rem,11vw,8rem)] leading-[0.86]">
           This page isn’t here

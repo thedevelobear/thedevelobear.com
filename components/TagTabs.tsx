@@ -7,7 +7,7 @@ const tabs = [
   { id: "design", label: "Design", href: "/tags/design/" },
 ] as const;
 
-/** Tabs that are plain links. The selected one gets an ink sticker. */
+/** Tabs that are plain links. The selected one gets an ink block. */
 export function TagTabs({
   selected = "all",
   isCurrentPage = false,
@@ -26,7 +26,7 @@ export function TagTabs({
               aria-current={
                 id === selected ? (isCurrentPage ? "page" : "true") : undefined
               }
-              className="display inline-flex min-h-12 min-w-20 items-center justify-center px-4 text-3xl decoration-3 underline-offset-4 hover:underline aria-[current]:-rotate-3 aria-[current]:bg-ink aria-[current]:text-sheet aria-[current]:no-underline"
+              className="display inline-flex min-h-12 min-w-20 items-center justify-center px-4 text-3xl decoration-3 underline-offset-4 hover:underline aria-[current]:bg-ink aria-[current]:text-sheet aria-[current]:no-underline"
             >
               {label}
             </Link>
