@@ -38,7 +38,7 @@ export default async function PostPage({ params }: PageProps<"/post/[slug]">) {
     {
       post: posts[index - 1],
       label: "Newer article",
-      align: "sm:col-start-2 sm:text-right",
+      align: "sm:col-start-2 sm:text-right [--tilt:1deg]",
     },
   ];
   const { default: Content } = await import(`@/content/post/${post.file}.md`);
@@ -106,7 +106,7 @@ export default async function PostPage({ params }: PageProps<"/post/[slug]">) {
 
         <div className="mx-auto max-w-[44rem] px-5 pt-12 sm:pt-16">
           {isOutdated(post.date) && (
-            <p className="mb-12 border-ink border-l-8 bg-sheet px-5 py-4 font-semibold">
+            <p className="-rotate-1 mb-12 border-3 border-ink border-dashed bg-sheet px-5 py-4 font-semibold">
               This is an older post, so some details may be outdated.
             </p>
           )}
@@ -134,7 +134,7 @@ export default async function PostPage({ params }: PageProps<"/post/[slug]">) {
                 key={neighbour.label}
                 href={`/post/${neighbour.post.slug}/`}
                 style={{ backgroundColor: neighbour.post.color }}
-                className={`group hover:-translate-x-1 hover:-translate-y-1 block p-6 transition-[translate,box-shadow] duration-150 hover:shadow-[0.5rem_0.5rem_0_var(--color-ink)] ${neighbour.align}`}
+                className={`tilt group block p-6 ${neighbour.align}`}
               >
                 <span className="block font-semibold text-sm">
                   {neighbour.label}

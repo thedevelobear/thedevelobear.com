@@ -24,7 +24,7 @@ export function PostList({
           <TagTabs selected={tag} isCurrentPage />
         </div>
       </div>
-      <ul className="shell mt-12 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="shell pile mt-12 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post, index) => (
           <li
             key={post.slug}

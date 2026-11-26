@@ -105,7 +105,7 @@
     color: var(--color-ink);
   }
 
-  /* A solid block to press, lifting off its orange shadow. */
+  /* A slightly crooked black label to press. */
   .button {
     display: inline-flex;
     align-items: center;
@@ -120,14 +120,11 @@
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
-    box-shadow: 0.3rem 0.3rem 0 var(--color-apricot);
-    transition:
-      translate 0.15s,
-      box-shadow 0.15s;
+    rotate: -1.5deg;
+    transition: rotate 0.15s;
   }
   .button:hover {
-    translate: -2px -2px;
-    box-shadow: 0.45rem 0.45rem 0 var(--color-apricot);
+    rotate: 1deg;
   }
 
   /* Underlined links that fill with ink on hover. */
@@ -136,10 +133,16 @@
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 0.2em;
+    /* Room around the text in the hover fill, without moving the text. Small,
+       so the fill doesn't swallow the punctuation that follows. */
+    padding-inline: 0.15em;
+    margin-inline: -0.15em;
+    box-decoration-break: clone;
   }
   .big-link {
     display: inline-block;
-    padding-block: 0.375rem;
+    padding: 0.375rem 0.5rem;
+    margin-inline: -0.5rem;
     font-family: var(--font-display);
     font-size: 1.75rem;
     font-weight: 900;
@@ -154,6 +157,21 @@
     background: var(--color-ink);
     color: var(--color-sheet);
     text-decoration-color: var(--color-ink);
+  }
+
+  /* A piece of paper put down by hand: tilted, and straightened on hover. */
+  .tilt {
+    rotate: var(--tilt, -1deg);
+    transition: rotate 0.2s;
+  }
+  .tilt:is(:hover, :focus-within) {
+    rotate: 0deg;
+  }
+  .pile > :nth-child(3n + 2) {
+    --tilt: 0.9deg;
+  }
+  .pile > :nth-child(3n) {
+    --tilt: -0.4deg;
   }
 
   /* Post body copy: calm, wide enough, never condensed or all caps. */
@@ -208,6 +226,10 @@
       text-underline-offset: 0.2em;
       /* Bare URLs must not widen the page. */
       overflow-wrap: anywhere;
+      /* As on .text-link. */
+      padding-inline: 0.15em;
+      margin-inline: -0.15em;
+      box-decoration-break: clone;
     }
     a:hover {
       background: var(--color-ink);

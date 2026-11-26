@@ -3,7 +3,6 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { Mascot } from "@/components/Mascot";
 import { SocialLinks } from "@/components/SocialLinks";
-import { Todo } from "@/components/Todo";
 import { breadcrumbs, pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -12,6 +11,28 @@ export const metadata: Metadata = pageMetadata({
     "About Develobear, who writes about front-end development and design and is the author of the react-rewards library.",
   path: "/about/",
 });
+
+const skills = [
+  ["Languages", "TypeScript, JavaScript, HTML, CSS"],
+  [
+    "Frontend",
+    "React, Next.js, React Native, Expo, Redux, Zustand, TanStack Query, Tailwind CSS, shadcn/ui",
+  ],
+  [
+    "Architecture",
+    "Microfrontends (Module Federation), monorepos (Turborepo), design systems, design tokens, library development, accessibility",
+  ],
+  ["Testing", "Jest, Vitest, React Testing Library, Cypress, BrowserStack"],
+  ["APIs", "REST, GraphQL, hypermedia-driven APIs, WebSockets"],
+  [
+    "Build and infrastructure",
+    "Vite, Webpack, Rsbuild, Node.js, Docker, Azure, CI/CD, Nginx, Sentry, Datadog, EAS",
+  ],
+  [
+    "AI",
+    "Multi-agent orchestration, GitHub Copilot, MCP servers, agent skills",
+  ],
+];
 
 export default function AboutPage() {
   return (
@@ -24,16 +45,11 @@ export default function AboutPage() {
           </h1>
           <div className="mt-12 grid items-end gap-14 lg:grid-cols-[minmax(0,6fr)_minmax(0,5fr)]">
             <div className="max-w-xl space-y-5 font-semibold text-xl lg:self-center lg:pb-24">
+              <p>Hi, I’m Jakub Szewczyk, known online as Develobear.</p>
               <p>
-                Hi, I’m <Todo>your name, as you want recruiters to see it</Todo>
-                , known online as Develobear.
-              </p>
-              <p>
-                <Todo>
-                  your current role and where you are based. The old page said
-                  front-end developer from Wrocław, Poland: confirm or correct
-                  it
-                </Todo>
+                I’m a senior front-end engineer and tech lead in Wrocław,
+                Poland, with more than a decade of experience building web and
+                mobile apps, mostly with React, React Native and TypeScript.
               </p>
               <p>
                 I write about front-end development and design, and I’m the
@@ -55,21 +71,35 @@ export default function AboutPage() {
 
       <div className="shell max-w-5xl! pt-14 sm:pt-20">
         <Section title="Experience">
-          <p>
-            <Todo>
-              roles, newest first, each with company, dates and one or two
-              things you delivered
-            </Todo>
-          </p>
+          <div className="space-y-4">
+            <p>
+              I’ve worked as a tech lead, a senior software engineer and a team
+              leader, building products for both web and mobile.
+            </p>
+            <p>
+              As a tech lead, I guide the technical direction of front-end
+              projects: planning architecture, turning business requirements
+              into technical plans, and building shared libraries and tooling.
+            </p>
+            <p>
+              As a senior software engineer, I’ve delivered complex applications
+              and reusable libraries that other projects adopted. As a team
+              leader, I ran a frontend and mobile department, mentored
+              developers and set company-wide frontend standards.
+            </p>
+          </div>
         </Section>
         <Section title="Skills">
-          <p>
-            <Todo>
-              the languages, frameworks and tools you want to be hired for
-            </Todo>
-          </p>
+          <dl className="space-y-3">
+            {skills.map(([group, list]) => (
+              <div key={group}>
+                <dt className="font-bold">{group}</dt>
+                <dd>{list}</dd>
+              </div>
+            ))}
+          </dl>
           <p className="mt-4">
-            Meanwhile, my articles show some of what I’ve worked with:{" "}
+            My articles show some of what I’ve worked with:{" "}
             <PostLink slug="5-things-to-improve-performance">
               React performance
             </PostLink>
@@ -103,9 +133,11 @@ export default function AboutPage() {
         </Section>
         <Section title="Contact">
           <p>
-            <Todo>
-              your email address, or how you want to be contacted about work
-            </Todo>
+            For work enquiries, email{" "}
+            <a href="mailto:thedevelobear@gmail.com" className="text-link">
+              thedevelobear@gmail.com
+            </a>
+            .
           </p>
           <SocialLinks className="mt-3 -ml-3" />
         </Section>

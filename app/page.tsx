@@ -68,7 +68,7 @@ export default function HomePage() {
         <SectionHeading id="articles" title="Articles">
           <TagTabs />
         </SectionHeading>
-        <ul className="mt-10 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="pile mt-10 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post, index) => (
             <li
               key={post.slug}
