@@ -2,7 +2,7 @@ import Image from "next/image";
 import type { ReactNode } from "react";
 import { mascot } from "@/lib/mascot";
 
-/** The big bear. Children are printed on its belly and scale with it. */
+/** The big bear. Children are printed on its T-shirt and scale with it. */
 export function Mascot({
   sizes,
   className = "",
@@ -10,7 +10,7 @@ export function Mascot({
 }: {
   sizes: string;
   className?: string;
-  /** Short, non-interactive text for the belly. */
+  /** Short, non-interactive text for the shirt. */
   children?: ReactNode;
 }) {
   return (
@@ -27,8 +27,8 @@ export function Mascot({
       />
       {children && (
         <div
-          className="display absolute flex flex-col items-center justify-center text-center text-paper"
-          style={mascot.belly}
+          className="display absolute flex flex-col items-center justify-center text-center text-ink"
+          style={mascot.shirt}
         >
           {children}
         </div>
@@ -37,7 +37,7 @@ export function Mascot({
   );
 }
 
-/** Just the head, cut off at the collar, to peek over an edge. Decorative. */
+/** The head and the top of the shirt, to peek over an edge. Decorative. */
 export function MascotHead({ className = "" }: { className?: string }) {
   return (
     <div

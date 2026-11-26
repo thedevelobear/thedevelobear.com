@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: "Page not found | Develobear" };
 
 export default function NotFound() {
   return (
-    <div className="bg-apricot pt-28 sm:pt-36">
+    <div className="bear-room bg-rose pt-28 sm:pt-36">
       <div className="shell flex flex-col items-center text-center">
         <h1 className="display text-[clamp(4rem,11vw,8rem)] leading-[0.86]">
           This page isn’t here
@@ -24,10 +24,10 @@ export default function NotFound() {
           </Link>
         </div>
         <Mascot
-          sizes="(max-width: 479px) 80vw, 384px"
-          className="mt-10 w-[80vw] max-w-96"
+          sizes="(max-width: 479px) 68vw, 320px"
+          className="mt-10 w-[68vw] max-w-80"
         >
-          <span aria-hidden="true" className="text-[15cqw] leading-none">
+          <span aria-hidden="true" className="text-[34cqw] leading-none">
             404
           </span>
         </Mascot>

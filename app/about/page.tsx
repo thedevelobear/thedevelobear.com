@@ -38,18 +38,18 @@ export default function AboutPage() {
   return (
     <>
       <JsonLd data={breadcrumbs(["About", "/about/"])} />
-      <div className="bg-honey pt-32 sm:pt-40">
-        <div className="shell">
-          <h1 className="display text-center text-[clamp(4rem,11.4vw,8.75rem)] leading-[0.86]">
+      <div className="bg-pink pt-32 sm:pt-40">
+        <div>
+          <h1 className="shell display text-center text-[clamp(4rem,11.4vw,8.75rem)] leading-[0.86]">
             About Develobear
           </h1>
-          <div className="mt-12 grid items-end gap-14 lg:grid-cols-[minmax(0,6fr)_minmax(0,5fr)]">
-            <div className="max-w-xl space-y-5 font-semibold text-xl lg:self-center lg:pb-24">
+          <div className="mt-12 grid items-end gap-14 lg:grid-cols-2 lg:gap-0">
+            <div className="w-full max-w-152 space-y-5 justify-self-center px-5 font-semibold text-xl lg:self-center lg:justify-self-end lg:pb-24">
               <p>Hi, I’m Jakub Szewczyk.</p>
               <p>
-                I’m a senior software engineer and tech lead in Wrocław,
-                Poland, with more than a decade of experience building web and
-                mobile apps, mostly with React, React Native and TypeScript.
+                I’m a senior software engineer and tech lead in Wrocław, Poland,
+                with more than a decade of experience building web and mobile
+                apps, mostly with React, React Native and TypeScript.
               </p>
               <p>
                 I write about front-end development and design, and I’m the
@@ -62,62 +62,64 @@ export default function AboutPage() {
               <p>Also, I’m not a bear, just in case someone asks.</p>
             </div>
             <Mascot
-              sizes="(max-width: 465px) 86vw, 520px"
-              className="w-[86vw] max-w-100 justify-self-center lg:w-full lg:max-w-130"
+              sizes="(max-width: 487px) 78vw, 380px"
+              className="w-[78vw] max-w-95 justify-self-center lg:mb-12"
             />
           </div>
         </div>
       </div>
 
-      <div className="shell max-w-5xl! pt-14 sm:pt-20">
-        <Section title="Experience">
-          <div className="space-y-4">
+      <div className="bear-room bg-rose pt-14 sm:pt-20">
+        <div className="shell max-w-5xl!">
+          <Section title="Experience">
+            <div className="space-y-4">
+              <p>
+                I’ve worked as a tech lead, a senior software engineer and a
+                team leader, building products for both web and mobile.
+              </p>
+              <p>
+                As a tech lead, I guide the technical direction of front-end
+                projects: planning architecture, turning business requirements
+                into technical plans, and building shared libraries and tooling.
+              </p>
+              <p>
+                As a senior software engineer, I’ve delivered complex
+                applications and reusable libraries that other projects adopted.
+                As a team leader, I ran a frontend and mobile department,
+                mentored developers and set company-wide frontend standards.
+              </p>
+            </div>
+          </Section>
+          <Section title="Skills">
+            <dl className="space-y-3">
+              {skills.map(([group, list]) => (
+                <div key={group}>
+                  <dt className="font-bold">{group}</dt>
+                  <dd>{list}</dd>
+                </div>
+              ))}
+            </dl>
+          </Section>
+          <Section title="Projects">
             <p>
-              I’ve worked as a tech lead, a senior software engineer and a team
-              leader, building products for both web and mobile.
+              <Link href="/projects/" className="text-link">
+                react-rewards and human-o-matic
+              </Link>
+              : a React micro-interaction library, and an MCP server for drum
+              MIDI.
             </p>
+          </Section>
+          <Section title="Contact">
             <p>
-              As a tech lead, I guide the technical direction of front-end
-              projects: planning architecture, turning business requirements
-              into technical plans, and building shared libraries and tooling.
+              For work enquiries, email{" "}
+              <a href="mailto:thedevelobear@gmail.com" className="text-link">
+                thedevelobear@gmail.com
+              </a>
+              .
             </p>
-            <p>
-              As a senior software engineer, I’ve delivered complex applications
-              and reusable libraries that other projects adopted. As a team
-              leader, I ran a frontend and mobile department, mentored
-              developers and set company-wide frontend standards.
-            </p>
-          </div>
-        </Section>
-        <Section title="Skills">
-          <dl className="space-y-3">
-            {skills.map(([group, list]) => (
-              <div key={group}>
-                <dt className="font-bold">{group}</dt>
-                <dd>{list}</dd>
-              </div>
-            ))}
-          </dl>
-        </Section>
-        <Section title="Projects">
-          <p>
-            <Link href="/projects/" className="text-link">
-              react-rewards and human-o-matic
-            </Link>
-            : a React micro-interaction library, and an MCP server for drum
-            MIDI.
-          </p>
-        </Section>
-        <Section title="Contact">
-          <p>
-            For work enquiries, email{" "}
-            <a href="mailto:thedevelobear@gmail.com" className="text-link">
-              thedevelobear@gmail.com
-            </a>
-            .
-          </p>
-          <SocialLinks className="mt-3 -ml-3" />
-        </Section>
+            <SocialLinks className="mt-3 -ml-3" />
+          </Section>
+        </div>
       </div>
     </>
   );

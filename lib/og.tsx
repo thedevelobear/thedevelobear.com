@@ -9,7 +9,7 @@ import { colors, siteName } from "./site";
 export async function ogImage(
   title: string,
   detail: string,
-  color = colors.honey,
+  color = colors.pink,
 ) {
   const [font, bear] = await Promise.all([
     readFile(join(process.cwd(), "assets/BigShoulders-Display-ExtraBold.ttf")),
@@ -22,7 +22,7 @@ export async function ogImage(
     ),
   ]);
   const type = mascot.src.endsWith(".svg") ? "image/svg+xml" : "image/png";
-  const bearWidth = 430;
+  const bearWidth = 410;
   // next/og downloads emoji art from a CDN, so cards go without emoji.
   const text = title.replace(
     /\s*(?:\p{Extended_Pictographic}|\u{FE0F}|\u{200D})+/gu,
@@ -74,7 +74,7 @@ export async function ogImage(
         alt=""
         width={bearWidth}
         height={Math.round((bearWidth * mascot.height) / mascot.width)}
-        style={{ position: "absolute", right: 0, bottom: 0 }}
+        style={{ position: "absolute", right: 24, top: 96 }}
       />
     </div>,
     {

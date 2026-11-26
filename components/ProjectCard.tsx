@@ -4,14 +4,17 @@ import { RewardDemo } from "./RewardDemo";
 
 type CardProps = {
   headingLevel: "h2" | "h3";
-  /** The /projects/ page shows everything. The home page is shorter. */
+  /** The /projects/ page shows everything. The home page shows short cards. */
   detailed?: boolean;
 };
 
-const title = "display text-[clamp(3.75rem,7vw,6.5rem)] leading-[0.86]";
-const band = "scroll-mt-4 py-14 sm:py-20";
+const bandTitle = "display text-[clamp(3.75rem,7vw,6.5rem)] leading-[0.86]";
+const cardTitle = "display text-[clamp(3rem,5vw,4.25rem)] leading-[0.88]";
+const band = "scroll-mt-4";
 const columns =
   "shell grid items-center gap-x-16 gap-y-12 lg:grid-cols-2 [&>*]:min-w-0";
+const card = "tilt flex h-full scroll-mt-4 flex-col bg-sheet p-7 sm:p-10";
+const pitch = "mt-5 max-w-lg font-semibold text-xl";
 
 function Features({ items }: { items: string[] }) {
   return (
@@ -46,54 +49,108 @@ async function RewardsStats() {
     <ul className="display mt-7 flex flex-col gap-2 text-[1.75rem] sm:text-[2rem]">
       {stats.map(([value, label]) => (
         <li key={label} className="flex items-baseline gap-3">
-          <span className="text-[1.5em] text-honey leading-none">{value}</span>{" "}
-          {label}
+          <span className="text-[1.5em] leading-none">{value}</span> {label}
         </li>
       ))}
     </ul>
   );
 }
 
-export function RewardsCard({ headingLevel: Heading, detailed }: CardProps) {
+function RewardsLinks() {
   const { links } = rewards;
   return (
-    <article
-      id="react-rewards"
-      className={`${band} on-ink bg-graphite text-sheet`}
-    >
+    <div className="flex flex-wrap items-center gap-x-7 gap-y-3">
+      <a href={links.docs} className="big-link">
+        Read the docs
+      </a>
+      <a href={links.github} className="big-link">
+        GitHub
+      </a>
+      <a href={links.npm} className="big-link">
+        npm
+      </a>
+    </div>
+  );
+}
+
+export function RewardsCard({ headingLevel: Heading, detailed }: CardProps) {
+  if (!detailed) {
+    return (
+      <article id="react-rewards" className={`${card} [--tilt:-0.6deg]`}>
+        <Heading className={cardTitle}>{rewards.name}</Heading>
+        <p className={pitch}>{rewards.pitch}</p>
+        <RewardsStats />
+        <div className="mt-auto pt-10">
+          <RewardDemo className="items-start" />
+          <div className="mt-4">
+            <RewardsLinks />
+          </div>
+        </div>
+      </article>
+    );
+  }
+
+  return (
+    <article id="react-rewards" className={`${band} bg-rose py-16 sm:py-24`}>
       <div className={columns}>
         <div>
-          <Heading className={title}>{rewards.name}</Heading>
-          <p className="mt-5 max-w-lg font-semibold text-xl">{rewards.pitch}</p>
+          <Heading className={bandTitle}>{rewards.name}</Heading>
+          <p className={pitch}>{rewards.pitch}</p>
           <RewardsStats />
           <Features items={rewards.features} />
-          {detailed && (
-            <p className="on-ink mt-7 overflow-x-auto bg-ink px-4 py-3 text-sheet text-sm">
-              <code>{rewards.install}</code>
-            </p>
-          )}
-          <div className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-3">
-            <a href={links.docs} className="button bg-sheet text-ink">
-              Read the docs
-            </a>
-            <a href={links.github} className="big-link">
-              GitHub
-            </a>
-            <a href={links.npm} className="big-link">
-              npm
-            </a>
+          <p className="on-ink mt-7 overflow-x-auto bg-ink px-4 py-3 text-sheet text-sm">
+            <code>{rewards.install}</code>
+          </p>
+          <div className="mt-8">
+            <RewardsLinks />
           </div>
           <p className="mt-5">
-            <Link href={links.post} className="text-link">
+            <Link href={rewards.links.post} className="text-link">
               Why I care about microinteractions
             </Link>
           </p>
         </div>
-        <div>
-          <RewardDemo />
-        </div>
+        <RewardDemo className="items-center text-center" />
       </div>
     </article>
+  );
+}
+
+/** The conversation, as two voices answering each other. */
+function Dialogue({
+  lines,
+}: {
+  lines: readonly (readonly [string, string])[];
+}) {
+  return (
+    <ol className="flex flex-col gap-4">
+      {lines.map(([speaker, text]) => (
+        <li
+          key={text}
+          className={`px-6 py-4 ${speaker === "You" ? "ml-12 self-end bg-smudge text-right" : "on-ink mr-8 self-start bg-ink text-sheet"}`}
+        >
+          <span
+            className={`display block text-3xl ${speaker === "You" ? "" : "text-pink"}`}
+          >
+            {speaker}
+          </span>
+          <span className="mt-1 block text-[0.9375rem]">{text}</span>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+function HumanOMaticLinks() {
+  return (
+    <div className="flex flex-wrap items-center gap-x-7 gap-y-3">
+      <a href={humanOMatic.links.web} className="button">
+        Open the web version
+      </a>
+      <a href={humanOMatic.links.github} className="big-link">
+        GitHub
+      </a>
+    </div>
   );
 }
 
@@ -101,45 +158,36 @@ export function HumanOMaticCard({
   headingLevel: Heading,
   detailed,
 }: CardProps) {
-  // The home page shows the last exchange of the same conversation.
-  const lines = detailed
-    ? humanOMatic.dialogue
-    : humanOMatic.dialogue.slice(-3);
+  if (!detailed) {
+    return (
+      <article className={`${card} [--tilt:0.6deg]`}>
+        <Heading className={cardTitle}>{humanOMatic.name}</Heading>
+        <p className={pitch}>{humanOMatic.pitch}</p>
+        {/* One short question and answer from the README example. */}
+        <div className="mt-8">
+          <Dialogue lines={humanOMatic.dialogue.slice(3, 5)} />
+        </div>
+        <div className="mt-auto pt-10">
+          <HumanOMaticLinks />
+        </div>
+      </article>
+    );
+  }
+
   return (
-    <article className={`${band} bg-apricot`}>
+    // The last band on its page: it leaves room for the footer's bear.
+    <article className={`${band} bear-room bg-mauve pt-16 sm:pt-24`}>
       <div className={columns}>
         <div className="lg:order-last">
-          <Heading className={title}>{humanOMatic.name}</Heading>
-          <p className="mt-5 max-w-lg font-semibold text-xl">
-            {humanOMatic.pitch}
-          </p>
+          <Heading className={bandTitle}>{humanOMatic.name}</Heading>
+          <p className={pitch}>{humanOMatic.pitch}</p>
           <Features items={humanOMatic.features} />
-          <div className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-3">
-            <a href={humanOMatic.links.web} className="button">
-              Open the web version
-            </a>
-            <a href={humanOMatic.links.github} className="big-link">
-              GitHub
-            </a>
+          <div className="mt-8">
+            <HumanOMaticLinks />
           </div>
         </div>
-        {/* The conversation, as two voices answering each other. */}
         <figure className="mx-auto w-full max-w-md">
-          <ol className="flex flex-col gap-4">
-            {lines.map(([speaker, text]) => (
-              <li
-                key={text}
-                className={`px-6 py-4 ${speaker === "You" ? "ml-12 self-end bg-sheet text-right" : "on-ink mr-8 self-start bg-ink text-sheet"}`}
-              >
-                <span
-                  className={`display block text-3xl ${speaker === "You" ? "" : "text-honey"}`}
-                >
-                  {speaker}
-                </span>
-                <span className="mt-1 block text-[0.9375rem]">{text}</span>
-              </li>
-            ))}
-          </ol>
+          <Dialogue lines={humanOMatic.dialogue} />
           <figcaption className="mt-5 text-center font-semibold text-sm">
             An example from the README. The words and numbers depend on the
             song.

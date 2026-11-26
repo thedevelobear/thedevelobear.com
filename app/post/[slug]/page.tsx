@@ -74,7 +74,7 @@ export default async function PostPage({ params }: PageProps<"/post/[slug]">) {
                 <li key={tag}>
                   <Link
                     href={`/tags/${tag}/`}
-                    className="display on-ink inline-flex min-h-10 items-center bg-ink px-4 text-2xl text-sheet hover:text-honey"
+                    className="display on-ink inline-flex min-h-10 items-center bg-ink px-4 text-2xl text-sheet hover:text-pink"
                   >
                     {tag}
                   </Link>
@@ -123,29 +123,31 @@ export default async function PostPage({ params }: PageProps<"/post/[slug]">) {
         </div>
       </article>
 
-      <nav
-        aria-label="More articles"
-        className="mx-auto mt-20 grid max-w-4xl gap-6 px-5 sm:grid-cols-2"
-      >
-        {neighbours.map(
-          (neighbour) =>
-            neighbour.post && (
-              <Link
-                key={neighbour.label}
-                href={`/post/${neighbour.post.slug}/`}
-                style={{ backgroundColor: neighbour.post.color }}
-                className={`tilt group block p-6 ${neighbour.align}`}
-              >
-                <span className="block font-semibold text-sm">
-                  {neighbour.label}
-                </span>
-                <span className="display mt-2 block text-3xl decoration-3 underline-offset-4 group-hover:underline">
-                  {neighbour.post.title}
-                </span>
-              </Link>
-            ),
-        )}
-      </nav>
+      <div className="bear-room mt-20 bg-mauve pt-16">
+        <nav
+          aria-label="More articles"
+          className="mx-auto grid max-w-4xl gap-6 px-5 sm:grid-cols-2"
+        >
+          {neighbours.map(
+            (neighbour) =>
+              neighbour.post && (
+                <Link
+                  key={neighbour.label}
+                  href={`/post/${neighbour.post.slug}/`}
+                  style={{ backgroundColor: neighbour.post.color }}
+                  className={`tilt group block p-6 ${neighbour.align}`}
+                >
+                  <span className="block font-semibold text-sm">
+                    {neighbour.label}
+                  </span>
+                  <span className="display mt-2 block text-3xl decoration-3 underline-offset-4 group-hover:underline">
+                    {neighbour.post.title}
+                  </span>
+                </Link>
+              ),
+          )}
+        </nav>
+      </div>
     </>
   );
 }

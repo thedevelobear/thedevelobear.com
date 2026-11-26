@@ -5,7 +5,7 @@ title: How to customize verification emails in Amazon Cognito? Use Lambda!
 description: "Cognito provides a way to verify the users, the developer should be responsible for customising how it looks like. The problem is that Cognito doesn’t provide a way to customize those messages easily."
 tags: [code]
 image: /img/Styling-cognito-verification-email/bearverless.jpg
-color: "#cbc6ba"
+color: "#d4d4d4"
 ---
 
 ## The problem

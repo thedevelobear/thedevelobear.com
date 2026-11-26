@@ -29,14 +29,14 @@ const securityHeaders = [
 const codeTheme = {
   name: "develobear",
   type: "dark",
-  colors: { "editor.foreground": "#ebe8df", "editor.background": "#231f20" },
+  colors: { "editor.foreground": "#f7f7f2", "editor.background": "#161616" },
   tokenColors: Object.entries({
-    "#aaa497": ["comment"],
-    "#eaa965": ["keyword", "storage", "entity.name.tag"],
-    "#f6dd86": ["string"],
-    "#d6bd88": ["constant", "support", "variable.language"],
-    "#efcf7e": ["entity.name", "support.function", "entity.other"],
-    "#ebe8df": ["keyword.operator", "punctuation"],
+    "#a2a2a2": ["comment"],
+    "#eda9a4": ["keyword", "storage", "entity.name.tag"],
+    "#d29591": ["string"],
+    "#d4d4d4": ["constant", "support", "variable.language"],
+    "#ffc7c2": ["entity.name", "support.function", "entity.other"],
+    "#f7f7f2": ["keyword.operator", "punctuation"],
   }).map(([foreground, scope]) => ({ scope, settings: { foreground } })),
 };
 

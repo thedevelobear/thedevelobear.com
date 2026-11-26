@@ -40,7 +40,7 @@ function readPost(fileName: string): Post | null {
     if (!data[key]) throw new Error(`${fileName}: missing "${key}"`);
   }
   if (!/^#[0-9a-f]{6}$/i.test(data.color)) {
-    throw new Error(`${fileName}: "color" must look like "#efcf7e"`);
+    throw new Error(`${fileName}: "color" must look like "#ffc7c2"`);
   }
 
   return {
