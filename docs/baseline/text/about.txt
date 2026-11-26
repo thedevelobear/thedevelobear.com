@@ -1,0 +1,20 @@
+HOME
+ABOUT ME
+CODE
+DESIGN
+Subscribe
+About Me
+
+I am a 27 years old front-end developer from Wrocław, Poland.
+
+Currently, I’m a software developer and a team leader in Tivix. I’m also an author of React Rewards, a library containing some micro-interactions for all of you to use in your projects.
+
+Also… I’m not a bear, just in case someone asks.
+
+©Develobear 2022
+
+Latest Posts
+Twitter
+Github
+LinkedIn
+Medium

@@ -1,0 +1,39 @@
+HOME
+ABOUT ME
+CODE
+DESIGN
+Subscribe
+Design
+A collection of 4 posts
+#DESIGN
+Microinteractions, halo effect, react-rewards. Reward your users for little things and make them smile!
+
+Microinteractions are… let’s say they are events in our apps, that — when used wisely — create a moment of engagement and reward our users for the actions they did.
+
+ develobear
+#CODE #DESIGN
+The impostor syndrome — do you suffer from it?
+
+Have you ever thought that you shouldn’t do something because others are better than you? Perhaps once in a while you are attacked by the feeling that you are cheating others?
+
+ develobear
+#DESIGN
+Should you learn design as a front-end developer?
+
+This question can be used to provoke a looong discussion among front-end developers. Just like bringing up a topic of semi-colons in JavaScript, css-in-js or the best linter config (just try to bring up one of these, grab some popcorn and watch 👀🍿).
+
+ develobear
+#DESIGN
+How to create a modern looking user interface? Get inspired by Memphis!
+
+The movement itself was created in 1981 by Ettore Sottsass — an Italian architect and designer. Sottsass organized a meeting with other designers after which they officially formed a design collaborative named Memphis.
+
+ develobear
+Page 1 of 1 
+©Develobear 2022
+
+Latest Posts
+Twitter
+Github
+LinkedIn
+Medium

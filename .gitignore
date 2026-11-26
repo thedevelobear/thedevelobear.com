@@ -1,4 +1,19 @@
-/materials
-.idea
-/public
-.history
+/node_modules/
+/.next/
+/out/
+/.vercel/
+/.tmp/
+/.history/
+/.idea/
+.DS_Store
+.env*
+*.pem
+*.log
+*.tsbuildinfo
+next-env.d.ts
+/docs/design-reference.png
+/docs/inspiration/
+# Test and Lighthouse output.
+/test-results/
+/playwright-report/
+/.lighthouseci/

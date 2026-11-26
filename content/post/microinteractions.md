@@ -1,21 +1,18 @@
 ---
-author: "develobear"
 date: 2018-11-18
 slug: microinteractions
 title: Microinteractions, halo effect, react-rewards. Reward your users for little things and make them smile!
-description: Microinteractions are… let’s say they are events in our apps, that — when used wisely — create a moment of engagement and reward our users for the actions they did.
-weight: 10
+description: "Microinteractions are… let’s say they are events in our apps, that — when used wisely — create a moment of engagement and reward our users for the actions they did."
 tags: [design]
-authorAvatar: /img/Bear-avatar.png
-image: img/Microinteractions/Bearthday.png
-comments: true
+image: /img/Microinteractions/Bearthday.png
+color: "#f2be88"
 ---
 
 ## Microinteractions? What is that!
 
 Microinteractions are… let’s say they are events in our apps, that — when used wisely — create a moment of engagement and reward our users for the actions they performed. They are tiny design elements that are meant to be welcoming and memorable so that users remember them and subconsciously keep coming back to your app.
 
-<img src="/img/Microinteractions/facebook-interactions.gif" />
+![Animation of Facebook reaction microinteractions](/img/Microinteractions/facebook-interactions.mp4)
 
 Microinteractions are meant to fulfill these main functions:
 
@@ -28,7 +25,8 @@ Microinteractions are meant to fulfill these main functions:
 
 ### The “What is that!” part
 
-<img src="/img/Microinteractions/trigersrules.png" />
+![Diagram of the four parts of a microinteraction: trigger, rules, feedback, loops and modes](/img/Microinteractions/trigersrules.png)
+
 As stated by Dan Saffer, the author of the book [Microinteractions](https://www.goodreads.com/book/show/17239285-microinteractions), there are four main parts of microinteractions.
 
 ### #1 Trigger
@@ -51,24 +49,25 @@ Loops and modes are the answer to a “What happens to a microinteraction when c
 ## Microinteractions — a few examples
 ### #1 Swipe gestures for navigation
 Swiping is easier and more intuitive for users. It reminds of physically moving elements on the screen. It is also a way of limiting the necessity of thinking while user uses your app, and the less the average user has to think, the better experience they will get.
-<img src="/img/Microinteractions/dribbble-interactions.gif" />
+
+![Animation of a swipeable event cards interface](/img/Microinteractions/dribbble-interactions.mp4)
+
 Source: [Event cards iOS interaction by Divan Raj | Dribbble | Dribbble](https://dribbble.com/shots/3731362-Event-cards-iOS-interaction?utm_source=Clipboard_Shot&utm_campaign=divanraj&utm_content=Event%20cards%20iOS%20interaction&utm_medium=Social_Share)
 
 ### #2 Keeping users informed
 Don’t let your user get bored. Keep them informed and (at least visually) engaged. Take a look at Instagram and their “You're all caught up” banner. People at Instagram know that it is better to tell their users that they’ve already seen the rest of the photos below then let them get bored by scrolling through the same photos over and over again.
 
-<img src="/img/Microinteractions/youreallcaughtup.jpg" />
+![Instagram’s “You’re all caught up” banner](/img/Microinteractions/youreallcaughtup.jpg)
 
 ### #3 Rewards
 Reward your users for their actions. Have you ever heard of Facebook Text Delights? They are a great example of rewarding users. They are animations that trigger when you type specific phrases in the comment section. For example, try typing “you’re the best” or “wonderful time”.
 
-<img src="/img/Microinteractions/fb-great.gif" />
+![Animation of a Facebook Text Delight](/img/Microinteractions/fb-great.mp4)
 
 If you’re using React to create your app, you can use [react-rewards](https://github.com/thedevelobear/react-rewards), a small library I’ve created to let you reward your users with a rain of confetti or emoji!
 
 ## Why should I care? I don’t have money for that!
 ### The “why should I care?” part
-
 
 *(If you're a girl, please replace "great girl" with "great boy" or leave it, it's up to you.)*
 
@@ -94,6 +93,6 @@ What does it have to do with microinteractions? It’s simple. You can invest in
 ## React-rewards — my way of easily rewarding users
 If you’re short on the budget you can use a small React lib I’ve created, called [react-rewards](https://github.com/thedevelobear/react-rewards). It enables you to wrap your “register account” button with a confetti/emoji cannon in a few lines of code. This way you can easily reward your users for creating an account with a rain of confetti, or you can shoot a few coin emojis when the user clicks a donate button. Trust me, people will remember those tiny details. Visit my GitHub page to read more about it!
 
-<img src="/img/Microinteractions/react-rewards.gif" />
+![Animation of react-rewards firing confetti and emoji from a button](/img/Microinteractions/react-rewards.mp4)
 
-Hey, one more thing. I've created the graphics with the help of <a rel="noreferrer" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
+Hey, one more thing. I've created the graphics with the help of [www.vecteezy.com](https://vecteezy.com)

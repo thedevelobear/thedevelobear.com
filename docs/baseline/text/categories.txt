@@ -1,0 +1,32 @@
+HOME
+ABOUT ME
+CODE
+DESIGN
+Subscribe
+Categories
+/ 
+#DESIGN
+Microinteractions, halo effect, react-rewards. Reward your users for little things and make them smile!
+
+Microinteractions are… let’s say they are events in our apps, that — when used wisely — create a moment of engagement and reward our users for the actions they did.
+
+ develobear
+#CODE
+My take on react-three-fiber library
+
+So I decided to try out the react-three-fiber library, and it was… fun. I did enjoy the result, however the building process was a bit tiring. Let’s dive deeper into that.
+
+ develobear
+#CODE
+Logging and debugging in JavaScript. A few methods I use on a daily basis.
+
+I wrote this article to share a few debugging and logging methods I tend to use on a daily basis. I hope that at least some of them aren’t as popular as console.log, at least among the ones that just begin their journey with JavaScript.
+
+ develobear
+©Develobear 2022
+
+Latest Posts
+Twitter
+Github
+LinkedIn
+Medium

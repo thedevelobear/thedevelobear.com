@@ -1,14 +1,11 @@
 ---
-author: "develobear"
 date: 2020-10-29
 slug: react-three-fibear
 title: My take on react-three-fiber library
-description: So I decided to try out the *react-three-fiber* library, and it was... fun. I did enjoy the result, however the building process was a bit tiring. Let's dive deeper into that.
-weight: 10
+description: "So I decided to try out the react-three-fiber library, and it was... fun. I did enjoy the result, however the building process was a bit tiring. Let's dive deeper into that."
 tags: [code]
-authorAvatar: /img/Bear-avatar.png
-image: img/React-three-fibear/react-three-fibear.png
-comments: true
+image: /img/React-three-fibear/react-three-fibear.png
+color: "#bfa674"
 ---
 
 ## Short Intro
@@ -191,7 +188,6 @@ import { a, useSpring } from "react-spring/three";
     >
 ```
 
-
 ### Lights and post-processing
 
 Adding lights in react-three-fiber is easy too! You can create ambient lights, spotlights and point lights easily.
@@ -219,7 +215,7 @@ As for the post-processing, the situation gets complicated really quickly — es
 I might write a separate blog post just about post-processing, shaders etc. in the future, but for now, you can [check how I did the effects here](https://github.com/thedevelobear/react-three-fibear/blob/master/src/components/Effects.js).
 ## End result
 
-<img src="/img/React-three-fibear/react-three-fibear.png" />
+![The 3D bear scene floating among stars](/img/React-three-fibear/react-three-fibear.png)
 
 Developing the whole thing took me the whole weekend (the coding itself of course - creating a bear took much more than that 😄), but I'm satisfied with the result!
 

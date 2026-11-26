@@ -1,14 +1,11 @@
 ---
-author: "develobear"
 date: 2018-09-25
 slug: 5-things-to-improve-performance
 title: 5 things you can do to speed up your React app 🏎
-description: Fortunately, this won’t be another post that just nags about technology being ahead of us or our inability to fully use it’s potential, but there is one thing I just have to complain about – we are lazy enough to just be OK with it. We don’t even try to pursue it.
-weight: 10
+description: "Fortunately, this won’t be another post that just nags about technology being ahead of us or our inability to fully use it’s potential, but there is one thing I just have to complain about – we are lazy enough to just be OK with it. We don’t even try to pursue it."
 tags: [code]
-authorAvatar: /img/Bear-avatar.png
-image: img/5-things-to-improve-performance/Bearmula_One.png
-comments: true
+image: /img/5-things-to-improve-performance/Bearmula_One.png
+color: "#f1d596"
 ---
 
 ## Short Intro
@@ -238,4 +235,4 @@ If you read this post, or maybe you just glanced at it but decided to use some o
 
 Of course there are many other ways to improve performance of your React apps, but hey, we all have to start somewhere, right? I might write part 2 when I find something worth mentioning on this.blog (😎) but until then… have fun speeding up your apps!
 
-Hey, one more thing. I've created the graphics with the help of <a rel="noreferrer" target="_blank" href="https://vecteezy.com"> www.vecteezy.com</a>
+Hey, one more thing. I've created the graphics with the help of [www.vecteezy.com](https://vecteezy.com)
