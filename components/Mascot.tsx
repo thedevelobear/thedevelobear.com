@@ -39,21 +39,18 @@ export function Mascot({
 
 /** The head and the top of the shirt, to peek over an edge. Decorative. */
 export function MascotHead({ className = "" }: { className?: string }) {
+  // The image crops itself: in a wrapper, WebKit lets it stretch past the ratio.
   return (
-    <div
-      className={`overflow-hidden ${className}`}
+    <Image
+      src={mascot.src}
+      alt=""
+      width={mascot.width}
+      height={mascot.height}
+      sizes="256px"
+      className={`h-auto object-cover object-top ${className}`}
       style={{
         aspectRatio: `${mascot.width} / ${mascot.height * mascot.headHeight}`,
       }}
-    >
-      <Image
-        src={mascot.src}
-        alt=""
-        width={mascot.width}
-        height={mascot.height}
-        sizes="256px"
-        className="h-auto w-full"
-      />
-    </div>
+    />
   );
 }
