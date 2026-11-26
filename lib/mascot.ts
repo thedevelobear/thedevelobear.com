@@ -2,7 +2,7 @@
 
 export const mascot = {
   /** Path under public/. A PNG or an SVG with a transparent background. */
-  src: "/img/mascot/bear.png",
+  src: "/img/mascot/bear.svg",
   /** The art's own size (for an SVG, its viewBox). It sets the aspect ratio. */
   width: 1040,
   height: 1671,
